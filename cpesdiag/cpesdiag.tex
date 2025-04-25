@@ -1,0 +1,245 @@
+% Copyright 2025 University of Twente
+%
+% Licensed under the Apache License, Version 2.0 (the "License");
+% you may not use this file except in compliance with the License.
+% You may obtain a copy of the License at
+%
+%     http://www.apache.org/licenses/LICENSE-2.0
+%
+% Unless required by applicable law or agreed to in writing, software
+% distributed under the License is distributed on an "AS IS" BASIS,
+% WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+% See the License for the specific language governing permissions and
+% limitations under the License.
+
+%Tikz styles
+\def \importcpesnodestyle{
+\tikzset{
+% Normal node styles
+  % Devices
+  device/.style={rectangle, rounded corners=2pt, inner sep=12pt, draw=blue, top color= white, bottom color=blue!25, text=black},
+  % Physical
+  phy/.style={circle, draw=black, top color= white, inner sep=8pt, bottom color=gray!25, text=black},
+  % Cyber controllers
+  control/.style={regular polygon, regular polygon sides=6, rounded corners=1pt, draw=teal, top color=white, inner sep=8pt, bottom color=teal!25, text=black},
+  % Societal interaction
+  interact/.style={diamond, rounded corners=2pt, inner sep=8pt, draw=red, top color= white, bottom color=red!25, text=black},
+  %
+  % Node connector style (small icons to connect lines)
+  % Devices
+  dnode/.style={rectangle, inner sep=3pt, fill=blue, draw=blue}, text=black,
+  % Physical flow
+  pnode/.style={circle,draw=black, inner sep=2pt, fill=black, text=black},
+  % Cyber controllers
+  cnode/.style={regular polygon,regular polygon sides=6,draw=teal, inner sep=2pt, fill=teal, text=black},
+  % Societal interaction
+  inode/.style={diamond, draw=red, inner sep=1.5pt, fill=red, text=black}
+  }
+}
+
+\def \importcpeslinestyle{
+\tikzset{
+% Style for links between nodes
+  % Devices
+  dlink/.style={rounded corners=5pt, blue, text=black},
+  % Physical
+  plink/.style={thick, rounded corners=5pt, text=black},
+  % Cyber controllers
+  clink/.style={thick, teal, rounded corners=5pt, text=black},
+  % Cyber controllers (uni-directional)
+  clinku/.style={densely dotted, thick, teal, rounded corners=5pt, text=black},
+  % Societal interaction
+  ilink/.style={red, rounded corners=5pt, text=black}
+  }
+}
+
+
+\def \importcpesnodestylegrey{
+\tikzset{
+% Normal node styles
+  % Devices
+  device/.style={rectangle, rounded corners=2pt, inner sep=12pt, draw=black, top color=white, bottom color=gray!25, text=black},
+  % Physical
+  phy/.style={circle, draw=black, top color= white, inner sep=8pt, bottom color=gray!25, text=black},
+  % Cyber controllers
+  control/.style={regular polygon,regular polygon sides=6, rounded corners=1pt, draw=gray, top color=white, inner sep=8pt, bottom color=gray!25, text=black},
+  % Societal interaction
+  interact/.style={diamond, rounded corners=2pt, inner sep=8pt, draw=gray, top color=white, bottom color=gray!25, text=black},
+  %
+  % Node connector style (small icons to connect lines)
+  % Devices
+  dnode/.style={rectangle, inner sep=3pt, fill=black, text=black},
+  % Physical
+  pnode/.style={circle,draw=black, inner sep=2pt, fill=black, text=black},
+  % Cyber controllers
+  cnode/.style={regular polygon,regular polygon sides=6,draw=gray, inner sep=2pt, fill=gray, text=black},
+  % Societal interaction
+  inode/.style={diamond, draw=gray, inner sep=1.5pt, fill=gray, text=black}
+  }
+}
+
+\def \importcpeslinestylegrey{
+\tikzset{
+% Style for links between nodes
+  % Devices
+  dlink/.style={rounded corners=5pt, black, text=black},
+  % Physical flow
+  plink/.style={thick, rounded corners=5pt, text=black},
+  % Cyber controllers
+  clink/.style={thick, gray, rounded corners=5pt, text=black},
+  % Cyber controllers (uni-directional)
+  clinku/.style={densely dotted, thick, gray, rounded corners=5pt, text=black},
+  % Societal interaction
+  ilink/.style={gray, rounded corners=5pt, text=black}
+  }
+}
+
+
+% Import command for the coloured style
+\def \importcpesstyle{
+  \importcpesnodestyle
+  \importcpeslinestyle
+}
+
+
+% Import command to use the greyscale version
+\def \importcpesstylegrey{
+  \importcpesnodestylegrey
+  \importcpeslinestylegrey
+}
+
+
+% Import command to use the grayscale version instead if you prefer to use American English ;-)
+\def \importcpesstylegray{
+  \importcpesstylegrey
+}
+
+
+% Node definitions for placing in a matrix
+
+
+% The large nodes
+% parameters:
+%   #1: unique name for identification
+%   #2: icon name (as provided by the material design icons, see https://fonts.google.com/icons)
+%   #3: label text with styling (e.g., label=right:\scriptsize{some device})
+% for respectively device, physcial, controllers (cyber), and societal interaction
+\def \devicenode#1#2#3{
+  \node (#1) [device, #3] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#2.pdf}}}
+}
+
+\def \phynode#1#2#3{
+  \node (#1) [phy, #3] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#2.pdf}}}
+}
+
+\def \controlnode#1#2#3{
+  \node (#1) [control, #3] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#2.pdf}}}
+}
+
+\def \interactionnode#1#2#3{
+  \node (#1) [interact, #3] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#2.pdf}}}
+}
+
+
+% The small connection nodes
+% parameters:
+%   #1: unique name for identification
+%   #2: label text with styling (e.g., label=right:\scriptsize{some device})
+% for respectively device, physcial, controllers (cyber), and societal interaction
+\def \dnode#1#2{
+  \node (#1) [dnode, #2] {}
+}
+
+\def \pnode#1#2{
+  \node (#1) [pnode, #2] {}
+}
+
+\def \cnode#1#2{
+  \node (#1) [cnode, #2] {}
+}
+
+\def \inode#1#2{
+  \node (#1) [inode, #2] {}
+}
+
+
+
+
+% Node definitions using coordinate system
+
+% The large nodes
+% parameters:
+%   #1: unique name for identification
+%   #2: coordinates (e.g., (1,1))
+%   #3: icon name (as provided by the material design icons, see https://fonts.google.com/icons)
+%   #4: label text with styling (e.g., label=right:\scriptsize{some device})
+% for respectively device, physcial, controllers (cyber), and societal interaction
+\def \devicenodex#1#2#3#4{
+  \node (#1) at (#2) [device, #4] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#3.pdf}}}
+}
+
+\def \phynodex#1#2#3#4{
+  \node (#1) at (#2) [phy, #4] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#3.pdf}}}
+}
+
+\def \controlnodex#1#2#3#4{
+  \node (#1) at (#2) [control, #4] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#3.pdf}}}
+}
+
+\def \interactnodex#1#2#3#4{
+  \node (#1) at (#2) [interact, #4] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#3.pdf}}}
+}
+
+
+% The large node swith dual icons
+% parameters:
+%   #1: unique name for identification
+%   #2: coordinates (e.g., (1,1))
+%   #3: large icon name (right, transparent) (as provided by the material design icons, see https://fonts.google.com/icons)
+%   #4: small icon name (left bottom, filled version) (as provided by the material design icons, see https://fonts.google.com/icons)
+%   #5: label text with styling (e.g., label=right:\scriptsize{some device})
+% for respectively device, physcial, controllers (cyber), and societal interaction
+\def \devicenodedx#1#2#3#4#5{
+  \node (#1) at (#2) [device, #5] {};
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{0.6}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/plain/#3.pdf}}};
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/fill/#4.pdf}}}
+}
+
+\def \phynodedx#1#2#3#4#5{
+  \node (#1) at (#2) [phy, #5] {};
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{0.6}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/plain/#3.pdf}}};
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/fill/#4.pdf}}}
+}
+
+\def \controlnodedx#1#2#3#4#5{
+  \node (#1) at (#2) [control, #5] {};
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{0.6}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/plain/#3.pdf}}};
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/fill/#4.pdf}}}
+}
+
+\def \interactnodedx#1#2#3#4#5{
+  \node (#1) at (#2) [interact, #5] {};
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{0.6}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/plain/#3.pdf}}};
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/fill/#4.pdf}}}
+}
+
+% The small connection nodes
+%   #1: unique name for identification
+%   #2: coordinates (e.g., (1,1))
+%   #3: label text with styling (e.g., label=right:\scriptsize{some device})
+% for respectively device, flow (physcial), controllers (cyber), and societal interaction
+\def \dnodex#1#2#3{
+  \node (#1) at (#2) [dnode, #3] {}
+}
+
+\def \pnodex#1#2#3{
+  \node (#1) at (#2) [pnode, #3] {}
+}
+
+\def \cnodex#1#2#3{
+  \node (#1) at (#2) [cnode, #3] {}
+}
+
+\def \inodex#1#2#3{
+  \node (#1) at (#2) [cnode, #3] {}
+}

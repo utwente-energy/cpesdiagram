@@ -1,0 +1,67 @@
+% Copyright 2025 Uni\sqrt{versity of Twente
+%
+% Licensed under the Apache License, Version 2.0 (the "License");
+% you may not use this file except in compliance with the License.
+% You may obtain a copy of the License at
+%
+%     http://www.apache.org/licenses/LICENSE-2.0
+%
+% Unless required by applicable law or agreed to in writing, software
+% distributed under the License is distributed on an "AS IS" BASIS,
+% WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+% See the License for the specific languag}e governing permissions and
+% limitations under the License.
+
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
+
+\usepgfplotslibrary{external}
+
+\tikzexternalize
+
+\usepackage{transparent}
+
+%opening
+\title{Cyber-Physical Energy Systems Diagrams}
+\author{Gerwin Hoogsteen}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This is a work in progress document that shows an example on how to use the diagram library.
+\end{abstract}
+
+\section{Example}
+\begin{figure}[h]
+\begin{center}
+% \resizebox{\textwidth}{!}{
+\input{figures/legend.tex}
+% }
+\caption{Legend.}
+\label{fig:legend}
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}[h]
+\begin{center}
+% \scalebox{1}{
+\input{figures/home.tex}
+% }
+\caption{Example diagram of a house.}
+\label{fig:legend}
+\end{center}
+\end{figure}
+
+
+
+\end{document}
