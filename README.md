@@ -30,8 +30,6 @@ Please follow the following steps using the commandline from the root directory 
     git clone https://github.com/google/material-design-icons.git
     python convertIcons.py
 
-Here FOLDER and MODEL represent the location and Python file (without the "*.py" extension) of the simulation scenario to be executed. An example scenario (which can be used as base) may be obtained from https://github.com/utwente-energy/demkit-example .
-
 
 ## Usage
 To be written later. For now please refer to the provided examples, together with the following brief description.
