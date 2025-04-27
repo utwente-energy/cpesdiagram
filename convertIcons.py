@@ -18,6 +18,7 @@
 # Tool to convert Google's Material Design Symbols into PDF format for use in LaTeX documents
 
 import os
+import shutil
 import cairosvg
 
 
@@ -99,42 +100,50 @@ def add_stroke(filename, stroke):
 # Make sure the folders exist
 os.makedirs(outdir+"/pdf/plain", exist_ok = True)
 os.makedirs(outdir+"/pdf/fill", exist_ok = True)
-
+os.makedirs(outdir+"/svg/plain", exist_ok = True)
+os.makedirs(outdir+"/svg/fill", exist_ok = True)
 
 # == Process the Material Design Symbols ==
 
 # Process all the icons one by one
 subfolders= os.listdir(indirmds)
 for iconname in subfolders:
-    print("processing mds:"+iconname)
+    if not '_stroke.svg' in iconname:
+        print("processing mds:"+iconname)
 
-    # First process the plain icon
+        # First process the plain icon
 
-    # Extract the icon name and location
-    icon = iconname + "_" + icon_weight + icon_grade + "_" + icon_size + "px.svg"
-    icon = icon.replace("__", "_")  # remove double underscore
-    filename = indirmds+iconname+"/"+icons_style+"/"+icon
+        # Extract the icon name and location
+        icon = iconname + "_" + icon_weight + icon_grade + "_" + icon_size + "px.svg"
+        icon = icon.replace("__", "_")  # remove double underscore
+        filename = indirmds+iconname+"/"+icons_style+"/"+icon
 
-    if stroke != "":
-        filename = add_stroke(filename, stroke)
+        if stroke != "":
+            filename = add_stroke(filename, stroke)
 
-    # Convert to pdf
-    cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mds:"+iconname+".pdf")
+        # Store the SVG version for easy use with e.g. Draw.io
+        shutil.copy(filename, outdir+"/svg/plain/mds:"+iconname+".svg")
+
+        # Convert to pdf
+        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mds:"+iconname+".pdf")
 
 
 
-    # Next do the same with the filled version
+        # Next do the same with the filled version
 
-    # Extract the icon name and location
-    icon = iconname + "_" + icon_weight_fill + icon_grade_fill + "fill1_" + icon_size_fill + "px.svg"
-    icon = icon.replace("__", "_")  # remove double underscore
-    filename = indirmds+iconname+"/"+icons_style_fill+"/"+icon
+        # Extract the icon name and location
+        icon = iconname + "_" + icon_weight_fill + icon_grade_fill + "fill1_" + icon_size_fill + "px.svg"
+        icon = icon.replace("__", "_")  # remove double underscore
+        filename = indirmds+iconname+"/"+icons_style_fill+"/"+icon
 
-    if stroke_fill != "":
-        filename = add_stroke(filename, stroke_fill)
+        if stroke_fill != "":
+            filename = add_stroke(filename, stroke_fill)
 
-    # Convert to pdf
-    cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mds:"+iconname+".pdf")
+        # Store the SVG version for easy use with e.g. Draw.io
+        shutil.copy(filename, outdir+"/svg/fill/mds:"+iconname+".svg")
+
+        # Convert to pdf
+        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mds:"+iconname+".pdf")
 
 
 
@@ -144,28 +153,35 @@ for iconname in subfolders:
 # Process all the icons one by one
 subfolders= os.listdir(indirmdi)
 for iconname in subfolders:
-    print("processing mdi:"+iconname)
+    if not '_stroke.svg' in iconname:
+        print("processing mdi:"+iconname)
 
-    # Process the plain variant
+        # Process the plain variant
 
-    # Extract the icon name and location
-    icon = iconname + ".svg"
-    filename = indirmdi+iconname
+        # Extract the icon name and location
+        icon = iconname + ".svg"
+        filename = indirmdi+iconname
 
-    if stroke != "":
-        filename = add_stroke(filename, stroke)
+        if stroke != "":
+            filename = add_stroke(filename, stroke)
 
-    # Convert to pdf
-    cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mdi:"+iconname+".pdf")
+        # Store the SVG version for easy use with e.g. Draw.io
+        #shutil.copy(filename, outdir+"/svg/plain/mdi:"+iconname+".svg")
+
+        # Convert to pdf
+        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mdi:"+iconname+".pdf")
 
 
 
 
-    # Add the small icon variant (MDI does not differentiate between filled and non filled)
-    filename = indirmdi+iconname
+        # Add the small icon variant (MDI does not differentiate between filled and non filled)
+        filename = indirmdi+iconname
 
-    if stroke_fill != "":
-        filename = add_stroke(filename, stroke_fill)
+        if stroke_fill != "":
+            filename = add_stroke(filename, stroke_fill)
 
-    # Convert to pdf
-    cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mdi:"+iconname+".pdf")
+        # Store the SVG version for easy use with e.g. Draw.io
+        #shutil.copy(filename, outdir+"/svg/fill/mdi:"+iconname+".svg")
+
+        # Convert to pdf
+        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mdi:"+iconname+".pdf")
