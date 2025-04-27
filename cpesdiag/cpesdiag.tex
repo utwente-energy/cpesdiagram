@@ -6,34 +6,106 @@
 %
 %     http://www.apache.org/licenses/LICENSE-2.0
 %
-% Unless required by applicable law or agreed to in writing, software
+% Unless requi\CPESColourInteraction by applicable law or agreed to in writing, software
 % distributed under the License is distributed on an "AS IS" BASIS,
 % WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 % See the License for the specific language governing permissions and
 % limitations under the License.
 
-%Tikz styles
+% Commands
+% Initializing the different settings for CPES Diagrams
+% Please modify the functions below if you wish to change the colours
+\newcommand\CPESColourPhy{black}
+\newcommand\CPESColourDevice{blue}
+\newcommand\CPESColourControl{teal}
+\newcommand\CPESColourInteraction{red}
+
+\newcommand\CPESColourText{black}
+
+\newcommand\CPESTransparency{1.0}
+\newcommand\CPESTransparencySmall{0.6}
+
+\newcommand\CPESOutline{solid}
+
+% Functions to switch between colour schemes
+% Default colours
+\def \CPESDefaultColours{
+  \renewcommand\CPESColourPhy{black}
+  \renewcommand\CPESColourDevice{blue}
+  \renewcommand\CPESColourControl{teal}
+  \renewcommand\CPESColourInteraction{red}
+  \renewcommand\CPESColourText{black}
+}
+
+
+% Greyscale colours
+\def \CPESGreyColours{
+  \renewcommand\CPESColourPhy{black}
+  \renewcommand\CPESColourDevice{black}
+  \renewcommand\CPESColourControl{gray}
+  \renewcommand\CPESColourInteraction{gray}
+  \renewcommand\CPESColourText{black}
+}
+
+
+% Light colours
+\def \CPESLightColours{
+  \renewcommand\CPESColourPhy{lightgray}
+  \renewcommand\CPESColourDevice{lightgray}
+  \renewcommand\CPESColourControl{lightgray}
+  \renewcommand\CPESColourInteraction{lightgray}
+  \renewcommand\CPESColourText{lightgray}
+}
+
+
+
+% Default transpancy
+\def \CPESDefaultTransparency{
+  \renewcommand\CPESTransparency{1.0}
+  \renewcommand\CPESTransparencySmall{0.6}
+}
+
+% Light transparency theme
+\def \CPESLightTransparency{
+  \renewcommand\CPESTransparency{0.4}
+  \renewcommand\CPESTransparencySmall{0.3}
+}
+
+
+% Macros to switch between actual devices and virtual elements
+\def \CPESsolid{
+  \renewcommand\CPESOutline{solid}
+}
+
+\def \CPESdashed{
+  \renewcommand\CPESOutline{dashed}
+}
+
+
+% CPES Tikz definitions
 \def \importcpesnodestyle{
 \tikzset{
 % Normal node styles
   % Devices
-  device/.style={rectangle, rounded corners=2pt, inner sep=12pt, draw=blue, top color= white, bottom color=blue!25, text=black},
+  device/.style={rectangle, \CPESOutline, draw=\CPESColourDevice, rounded corners=2pt, inner sep=11pt, top color=white, bottom color=\CPESColourDevice!25, text=\CPESColourText},
   % Physical
-  phy/.style={circle, draw=black, top color= white, inner sep=8pt, bottom color=gray!25, text=black},
+  phy/.style={circle, \CPESOutline, draw=\CPESColourPhy, inner sep=8pt, top color=white, bottom color=\CPESColourPhy!25, text=\CPESColourText},
   % Cyber controllers
-  control/.style={regular polygon, regular polygon sides=6, rounded corners=1pt, draw=teal, top color=white, inner sep=8pt, bottom color=teal!25, text=black},
+  control/.style={regular polygon, regular polygon sides=6, \CPESOutline, draw=\CPESColourControl, rounded corners=1pt, inner sep=8pt, top color=white, bottom color=\CPESColourControl!25, text=\CPESColourText},
   % Societal interaction
-  interact/.style={diamond, rounded corners=2pt, inner sep=8pt, draw=red, top color= white, bottom color=red!25, text=black},
+  interact/.style={diamond, \CPESOutline, draw=\CPESColourInteraction, rounded corners=2pt, inner sep=8pt,  top color=white, bottom color=\CPESColourInteraction!25, text=\CPESColourText},
   %
   % Node connector style (small icons to connect lines)
   % Devices
-  dnode/.style={rectangle, inner sep=3pt, fill=blue, draw=blue}, text=black,
+  dnode/.style={rectangle, \CPESOutline, fill=\CPESColourDevice, draw=\CPESColourDevice, inner sep=3pt, text=\CPESColourText},
   % Physical flow
-  pnode/.style={circle,draw=black, inner sep=2pt, fill=black, text=black},
+  pnode/.style={circle, \CPESOutline, fill=\CPESColourPhy, draw=\CPESColourPhy, inner sep=2pt, text=\CPESColourText},
   % Cyber controllers
-  cnode/.style={regular polygon,regular polygon sides=6,draw=teal, inner sep=2pt, fill=teal, text=black},
+  cnode/.style={regular polygon, regular polygon sides=6, \CPESOutline, fill=\CPESColourControl, draw=\CPESColourControl, inner sep=2pt, text=\CPESColourText},
   % Societal interaction
-  inode/.style={diamond, draw=red, inner sep=1.5pt, fill=red, text=black}
+  inode/.style={diamond, \CPESOutline, fill=\CPESColourInteraction, draw=\CPESColourInteraction, inner sep=1.5pt, text=\CPESColourText},
+  % Global settings
+  every label/.style={\CPESColourText}
   }
 }
 
@@ -41,104 +113,120 @@
 \tikzset{
 % Style for links between nodes
   % Devices
-  dlink/.style={rounded corners=5pt, blue, text=black},
+  dlink/.style={\CPESColourDevice, rounded corners=5pt, text=\CPESColourText},
   % Physical
-  plink/.style={thick, rounded corners=5pt, text=black},
+  plink/.style={\CPESColourPhy, thick, rounded corners=5pt, text=\CPESColourText},
   % Cyber controllers
-  clink/.style={thick, teal, rounded corners=5pt, text=black},
+  clink/.style={\CPESColourControl, thick, rounded corners=5pt, text=\CPESColourText},
   % Cyber controllers (uni-directional)
-  clinku/.style={densely dotted, thick, teal, rounded corners=5pt, text=black},
+  clinku/.style={\CPESColourControl, densely dotted, thick, rounded corners=5pt, text=\CPESColourText},
   % Societal interaction
-  ilink/.style={red, rounded corners=5pt, text=black}
-  }
-}
-
-
-\def \importcpesnodestylegrey{
-\tikzset{
-% Normal node styles
-  % Devices
-  device/.style={rectangle, rounded corners=2pt, inner sep=12pt, draw=black, top color=white, bottom color=gray!25, text=black},
-  % Physical
-  phy/.style={circle, draw=black, top color= white, inner sep=8pt, bottom color=gray!25, text=black},
-  % Cyber controllers
-  control/.style={regular polygon,regular polygon sides=6, rounded corners=1pt, draw=gray, top color=white, inner sep=8pt, bottom color=gray!25, text=black},
-  % Societal interaction
-  interact/.style={diamond, rounded corners=2pt, inner sep=8pt, draw=gray, top color=white, bottom color=gray!25, text=black},
-  %
-  % Node connector style (small icons to connect lines)
-  % Devices
-  dnode/.style={rectangle, inner sep=3pt, fill=black, text=black},
-  % Physical
-  pnode/.style={circle,draw=black, inner sep=2pt, fill=black, text=black},
-  % Cyber controllers
-  cnode/.style={regular polygon,regular polygon sides=6,draw=gray, inner sep=2pt, fill=gray, text=black},
-  % Societal interaction
-  inode/.style={diamond, draw=gray, inner sep=1.5pt, fill=gray, text=black}
-  }
-}
-
-\def \importcpeslinestylegrey{
-\tikzset{
-% Style for links between nodes
-  % Devices
-  dlink/.style={rounded corners=5pt, black, text=black},
-  % Physical flow
-  plink/.style={thick, rounded corners=5pt, text=black},
-  % Cyber controllers
-  clink/.style={thick, gray, rounded corners=5pt, text=black},
-  % Cyber controllers (uni-directional)
-  clinku/.style={densely dotted, thick, gray, rounded corners=5pt, text=black},
-  % Societal interaction
-  ilink/.style={gray, rounded corners=5pt, text=black}
+  ilink/.style={\CPESColourInteraction, rounded corners=5pt, text=\CPESColourText}
   }
 }
 
 
 % Import command for the coloured style
-\def \importcpesstyle{
+\def \cpesstyle{
   \importcpesnodestyle
   \importcpeslinestyle
+
+%   % Styles
+%   \CPESDefaultColours
+%   \CPESDefaultTransparency
 }
 
 
 % Import command to use the greyscale version
-\def \importcpesstylegrey{
-  \importcpesnodestylegrey
-  \importcpeslinestylegrey
+\def \cpesstylegrey{
+  \importcpesnodestyle
+  \importcpeslinestyle
+
+  % Styles
+  \CPESGreyColours
+  \CPESDefaultTransparency
 }
 
 
 % Import command to use the grayscale version instead if you prefer to use American English ;-)
-\def \importcpesstylegray{
-  \importcpesstylegrey
+\def \cpesstylegray{
+  \cpesstylegrey
 }
 
 
-% Node definitions for placing in a matrix
+% Import command to use the light version
+\def \cpesstylelight{
+  \importcpesnodestyle
+  \importcpeslinestyle
+
+  % Styles
+  \CPESLightColours
+  \CPESLightTransparency
+}
+
+
+
+
+
+% Node definitions for placing in a matrix or relative placement
 
 
 % The large nodes
 % parameters:
 %   #1: unique name for identification
-%   #2: icon name (as provided by the material design icons, see https://fonts.google.com/icons)
-%   #3: label text with styling (e.g., label=right:\scriptsize{some device})
+%   #2: Optional position of the node (e.g., relative)
+%   #3: icon name (as provided by the material design icons, see https://fonts.google.com/icons)
+%   #4: label text with styling (e.g., label=right:\scriptsize{some device})
 % for respectively device, physcial, controllers (cyber), and societal interaction
-\def \devicenode#1#2#3{
-  \node (#1) [device, #3] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#2.pdf}}}
+\def \devicenode#1#2#3#4{
+  \node (#1) [device, #2, #4] {\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.5]{cpesdiag/icons/pdf/plain/#3.pdf}}}
 }
 
-\def \phynode#1#2#3{
-  \node (#1) [phy, #3] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#2.pdf}}}
+\def \phynode#1#2#3#4{
+  \node (#1) [phy, #2, #4] {\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.5]{cpesdiag/icons/pdf/plain/#3.pdf}}}
 }
 
-\def \controlnode#1#2#3{
-  \node (#1) [control, #3] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#2.pdf}}}
+\def \controlnode#1#2#3#4{
+  \node (#1) [control, #2, #4] {\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.5]{cpesdiag/icons/pdf/plain/#3.pdf}}}
 }
 
-\def \interactionnode#1#2#3{
-  \node (#1) [interact, #3] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#2.pdf}}}
+\def \interactionnode#1#2#3#4{
+  \node (#1) [interact, #2, #4] {\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.5]{cpesdiag/icons/pdf/plain/#3.pdf}}}
 }
+
+
+% The large nodes with dual icons
+% parameters:
+%   #1: unique name for identification
+%   #2: Optional position of the node (e.g., relative)
+%   #3: large icon name (right, transparent) (as provided by the material design icons, see https://fonts.google.com/icons)
+%   #4: small icon name (left bottom, filled version) (as provided by the material design icons, see https://fonts.google.com/icons)
+%   #5: label text with styling (e.g., label=right:\scriptsize{some device})
+% for respectively device, physcial, controllers (cyber), and societal interaction
+\def \devicenoded#1#2#3#4#5{
+  \node (#1) [device, #2, #5] {};
+  \pgfputat{\pgfxy(0,0)}{\pgfbox[center,center]{\transparent{\CPESTransparencySmall}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/pdf/plain/#3.pdf}}};
+  \pgfputat{\pgfxy(0,0)}{\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/pdf/fill/#4.pdf}}}
+}
+
+\def \phynoded#1#2#3#4#5{
+  \node (#1) [phy, #2, #5] {};
+  \pgfputat{\pgfxy(0,0)}{\pgfbox[center,center]{\transparent{\CPESTransparencySmall}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/pdf/plain/#3.pdf}}};
+  \pgfputat{\pgfxy(0,0)}{\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/pdf/fill/#4.pdf}}}
+}
+
+\def \controlnoded#1#2#3#4#5{
+  \node (#1) [control, #2, #5] {};
+  \pgfputat{\pgfxy(0,0)}{\pgfbox[center,center]{\transparent{\CPESTransparencySmall}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/pdf/plain/#3.pdf}}};
+  \pgfputat{\pgfxy(0,0)}{\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/pdf/fill/#4.pdf}}}
+}
+
+\def \interactionnoded#1#2#3#4#5{
+  \node (#1) [interact, #2, #5] {};
+  \pgfputat{\pgfxy(0,0)}{\pgfbox[center,center]{\transparent{\CPESTransparencySmall}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/pdf/plain/#3.pdf}}};
+  \pgfputat{\pgfxy(0,0)}{\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/pdf/fill/#4.pdf}}}
+}
+
 
 
 % The small connection nodes
@@ -175,19 +263,19 @@
 %   #4: label text with styling (e.g., label=right:\scriptsize{some device})
 % for respectively device, physcial, controllers (cyber), and societal interaction
 \def \devicenodex#1#2#3#4{
-  \node (#1) at (#2) [device, #4] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#3.pdf}}}
+  \node (#1) at (#2) [device, #4] {\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.5]{cpesdiag/icons/pdf/plain/#3.pdf}}}
 }
 
 \def \phynodex#1#2#3#4{
-  \node (#1) at (#2) [phy, #4] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#3.pdf}}}
+  \node (#1) at (#2) [phy, #4] {\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.5]{cpesdiag/icons/pdf/plain/#3.pdf}}}
 }
 
 \def \controlnodex#1#2#3#4{
-  \node (#1) at (#2) [control, #4] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#3.pdf}}}
+  \node (#1) at (#2) [control, #4] {\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.5]{cpesdiag/icons/pdf/plain/#3.pdf}}}
 }
 
 \def \interactnodex#1#2#3#4{
-  \node (#1) at (#2) [interact, #4] {\pgfbox[center,center]{\includegraphics[scale=0.5]{cpesdiag/icons/plain/#3.pdf}}}
+  \node (#1) at (#2) [interact, #4] {\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.5]{cpesdiag/icons/pdf/plain/#3.pdf}}}
 }
 
 
@@ -201,26 +289,26 @@
 % for respectively device, physcial, controllers (cyber), and societal interaction
 \def \devicenodedx#1#2#3#4#5{
   \node (#1) at (#2) [device, #5] {};
-  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{0.6}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/plain/#3.pdf}}};
-  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/fill/#4.pdf}}}
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{\CPESTransparencySmall}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/pdf/plain/#3.pdf}}};
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/pdf/fill/#4.pdf}}}
 }
 
 \def \phynodedx#1#2#3#4#5{
   \node (#1) at (#2) [phy, #5] {};
-  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{0.6}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/plain/#3.pdf}}};
-  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/fill/#4.pdf}}}
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{\CPESTransparencySmall}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/pdf/plain/#3.pdf}}};
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/pdf/fill/#4.pdf}}}
 }
 
 \def \controlnodedx#1#2#3#4#5{
   \node (#1) at (#2) [control, #5] {};
-  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{0.6}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/plain/#3.pdf}}};
-  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/fill/#4.pdf}}}
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{\CPESTransparencySmall}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/pdf/plain/#3.pdf}}};
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/pdf/fill/#4.pdf}}}
 }
 
 \def \interactnodedx#1#2#3#4#5{
   \node (#1) at (#2) [interact, #5] {};
-  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{0.6}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/plain/#3.pdf}}};
-  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/fill/#4.pdf}}}
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{\CPESTransparencySmall}\includegraphics[scale=0.4, trim=0pt -10pt -10pt 0pt]{cpesdiag/icons/pdf/plain/#3.pdf}}};
+  \pgfputat{\pgfxy(#2)}{\pgfbox[center,center]{\transparent{\CPESTransparency}\includegraphics[scale=0.25, trim=-28pt 0pt 0pt -28pt]{cpesdiag/icons/pdf/fill/#4.pdf}}}
 }
 
 % The small connection nodes

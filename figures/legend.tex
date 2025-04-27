@@ -13,7 +13,7 @@
 % limitations under the License.
 
 \input{cpesdiag/cpesdiag.tex}
-\importcpesstyle
+\cpesstyle
 
 % use the following style instead to have the diagram in grayscale
 % \importcpesstylegrey
@@ -24,21 +24,21 @@
 % Defenition of the different nodes
  \node {Legend:}; \\
 % Physical Grid Nodes
-  \phynode{p1}{mds:join}{label=above:\tiny{grid asset}}; &
+  \phynoded{p1}{}{mds:join}{mds:join}{label=above:\tiny{grid asset}}; &
   &
   \pnode{p2}{}; &
 % A Device node
-  \devicenode{d1}{mds:electric_car}{label=above:\tiny{device}}; &
+  \devicenoded{d1}{}{mds:electric_car}{mds:electric_car}{label=above:\tiny{device}}; &
   &
   \dnode{d2}{}; &
 % A Control node
-  \controlnode{c1}{mds:memory}{label=above:\tiny{controller}}; &
+  \controlnoded{c1}{}{mds:memory}{mds:memory}{label=above:\tiny{controller}}; &
   &
   \cnode{c2}{}; &
   &
   \cnode{c3}{}; &
 % A Interactive node
-  \interactionnode{i1}{mds:person}{label=above:\tiny{interaction}}; &
+  \interactionnoded{i1}{}{mds:person}{mds:person}{label=above:\tiny{interaction}}; &
   &
   \inode{i2}{}; \\
 };

@@ -26,7 +26,13 @@ import cairosvg
 # == Input ==
 
 # Input directory of the icons
-indir = "material-design-icons/symbols/web/"
+# MDS icons:
+indirmds = "material-design-icons/symbols/web/"
+# MDI icons
+indirmdi = "MaterialDesign/svg/"
+
+
+# == Material Design Symbols specific settings ==
 
 # Icon style as listed on https://fonts.google.com/icons?icon.query=circles&icon.set=Material+Symbols&icon.size=24&icon.color=%231f1f1f
 icons_style = "materialsymbolsoutlined"
@@ -44,14 +50,6 @@ icon_weight_fill = "wght600"
 icon_grade = ""
 icon_grade_fill = ""
 
-# Add a stroke
-# use an empty string to avoid adding a stroke
-
-# Apply stroke to plain icons
-stroke = ''
-
-# Apply stroke for filled icon
-stroke_fill = 'stroke="white" stroke-width="24"'
 
 
 
@@ -61,6 +59,14 @@ stroke_fill = 'stroke="white" stroke-width="24"'
 # Output directory of the icons
 outdir = "cpesdiag/icons"
 
+
+# Add a stroke
+# use an empty string to avoid adding a stroke
+# Apply stroke to plain icons
+stroke = ''
+
+# Apply stroke for filled icon
+stroke_fill = 'stroke="white" stroke-width="24"'
 
 
 
@@ -88,31 +94,32 @@ def add_stroke(filename, stroke):
 
 
 
-
 # ==== Execution ====
 
 # Make sure the folders exist
-os.makedirs(outdir+"/plain", exist_ok = True)
-os.makedirs(outdir+"/fill", exist_ok = True)
+os.makedirs(outdir+"/pdf/plain", exist_ok = True)
+os.makedirs(outdir+"/pdf/fill", exist_ok = True)
 
+
+# == Process the Material Design Symbols ==
 
 # Process all the icons one by one
-subfolders= os.listdir(indir)
+subfolders= os.listdir(indirmds)
 for iconname in subfolders:
-    print("processing "+iconname)
+    print("processing mds:"+iconname)
 
     # First process the plain icon
 
     # Extract the icon name and location
     icon = iconname + "_" + icon_weight + icon_grade + "_" + icon_size + "px.svg"
     icon = icon.replace("__", "_")  # remove double underscore
-    filename = indir+iconname+"/"+icons_style+"/"+icon
+    filename = indirmds+iconname+"/"+icons_style+"/"+icon
 
     if stroke != "":
         filename = add_stroke(filename, stroke)
 
     # Convert to pdf
-    cairosvg.svg2pdf(url=filename, write_to=outdir+"/plain/mds:"+iconname+".pdf")
+    cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mds:"+iconname+".pdf")
 
 
 
@@ -121,10 +128,44 @@ for iconname in subfolders:
     # Extract the icon name and location
     icon = iconname + "_" + icon_weight_fill + icon_grade_fill + "fill1_" + icon_size_fill + "px.svg"
     icon = icon.replace("__", "_")  # remove double underscore
-    filename = indir+iconname+"/"+icons_style_fill+"/"+icon
+    filename = indirmds+iconname+"/"+icons_style_fill+"/"+icon
 
     if stroke_fill != "":
         filename = add_stroke(filename, stroke_fill)
 
     # Convert to pdf
-    cairosvg.svg2pdf(url=filename, write_to=outdir+"/fill/mds:"+iconname+".pdf")
+    cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mds:"+iconname+".pdf")
+
+
+
+
+# == Process the Material Design Icons ==
+
+# Process all the icons one by one
+subfolders= os.listdir(indirmdi)
+for iconname in subfolders:
+    print("processing mdi:"+iconname)
+
+    # Process the plain variant
+
+    # Extract the icon name and location
+    icon = iconname + ".svg"
+    filename = indirmdi+iconname
+
+    if stroke != "":
+        filename = add_stroke(filename, stroke)
+
+    # Convert to pdf
+    cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mdi:"+iconname+".pdf")
+
+
+
+
+    # Add the small icon variant (MDI does not differentiate between filled and non filled)
+    filename = indirmdi+iconname
+
+    if stroke_fill != "":
+        filename = add_stroke(filename, stroke_fill)
+
+    # Convert to pdf
+    cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mdi:"+iconname+".pdf")

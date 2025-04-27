@@ -13,15 +13,29 @@
 % limitations under the License.
 
 \input{cpesdiag/cpesdiag.tex}
-\importcpesstyle
+\cpesstyle
 
 % use the following style instead to have the diagram in grayscale
-% \importcpesstylegrey
+% \cpesstylegrey
+
+% use the following style instead to have the diagram in light grey colours
+% \cpesstylelight
+
+% use the following command to have a dashed line
+% \CPESdashed
+% and restore using
+% \CPESsolid
+
+% These commands can be used in the figure to switch between styles
 
 \begin{tikzpicture} 
 % Control nodes
-\controlnodedx{fc}{0,-4.5}{mds:memory}{mds:globe}{label=above:\tiny{fleet ctrl}};
-\controlnodedx{hc}{2,-4.5}{mds:memory}{mds:house}{label=-135:\tiny{HEMS}};
+\controlnodedx{fc}{0,-4.5}{mds:memory}{mds:globe}{label={above:\tiny{fleet ctrl}}};
+\controlnodedx{hc}{2,-4.5}{mds:memory}{mds:house}{label={-135:\tiny{HEMS}}};
+
+% Example to have relative node positions
+% \controlnode{hc2}{}{mds:house}{label={-135:\tiny{HEM2S}}};
+% \controlnode{hc3}{right= 1cm of hc2}{mds:house}{label={-135:\tiny{HEM3S}}};
 
 \node (f1) at (0.75, -0.5) {};
 \node (f2) at (0.75, -1.5) {};
@@ -35,6 +49,7 @@
 \controlnodedx{c5}{3.5,-6}{mds:memory}{mds:heat_pump}{label=above:\tiny{buf.conv. ctrl}};
 \controlnodedx{c6}{3.5,-7.5}{mds:memory}{mds:battery_3_bar}{label=above:\tiny{buf. ctrl}};
 \controlnodedx{c7}{3.5,-9}{mds:memory}{mds:solar_power}{label=above:\tiny{curt. ctrl}};
+
 
 % Device nodes
 \devicenodex{d1}{5.5,0}{mds:lightbulb}{label=above:\tiny{uncontrollable load}};
@@ -52,6 +67,7 @@
 \dnodex{e5}{7, -6}{};
 \dnodex{e6}{7, -7.5}{};
 
+
 % Physical infrastructure (Grid)
 \phynodex{poc}{8.25,-4.5}{mds:electric_meter}{label=above:\tiny{grid conn.}};
 
@@ -64,7 +80,6 @@
 
 % For interaction, use "interactionnode" (interactionnodex and interactionnodedx respectively)
 % For small interaction nodes, use "inode"
-
 
 % Links
 % Control

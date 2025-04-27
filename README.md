@@ -28,6 +28,7 @@ Please
 Please follow the following steps using the commandline from the root directory of this repository:
 
     git clone https://github.com/google/material-design-icons.git
+    git clone https://github.com/Templarian/MaterialDesign
     python convertIcons.py
 
 
@@ -45,7 +46,10 @@ Note that a greyscale version also exists:
 
 The diagram library consists of nodes (styles) for Devices (which link parts together), Cyber (e.g., controllers), Physical (e.g., grid infrastructure), and Interaction (e.g., humans). For these, different types exist, namely one for use in a matrix composition, a coordinate system (denoted with an additional x), and for both also a dual variant (allowing for two icons to be used).
 
-This software utilizes the icons as found in the Material Design set, which can be interactively viewed here: https://fonts.google.com/icons. One can copy the "icon name" (provided in the bottom right) to insert a specific icon. For this, use the form "mds:<icon name>" where mds is short for Material Design Symbol.
+This package utilizes the icons as found in the Material Design set, which can be interactively viewed here: https://fonts.google.com/icons. One can copy the "icon name" (provided in the bottom right) to insert a specific icon. For this, use the form "mds:<icon name>" where mds is short for Material Design Symbol.
+
+
+This package utilizes the icons as found in the Material Design Icons set by Pictogrammers, which can be interactively viewed here: https://pictogrammers.com/library/mdi/. One can copy the "icon name" (provided in the top of the pop-up window when selecting an icon) to insert a specific icon. For this, use the form "mdi:<icon name>" where mdi is short for Material Design Icon.
 
 
 ## License
@@ -54,6 +58,7 @@ This code is made available under the Apache version 2.0 license: https://www.ap
 
 This library depends on external icon repositories:
 - Google Material Symbols, available https://github.com/google/material-design-icons - Apache 2.0 License
+- Material Design Icons, available https://github.com/Templarian/MaterialDesign - Various licenses
 
 ## Contact
 In case you need assistance, please contact:
