@@ -166,7 +166,7 @@ for iconname in subfolders:
             filename = add_stroke(filename, stroke)
 
         # Store the SVG version for easy use with e.g. Draw.io
-        #shutil.copy(filename, outdir+"/svg/plain/mdi:"+iconname+".svg")
+        shutil.copy(filename, outdir+"/svg/plain/mdi:"+iconname+".svg")
 
         # Convert to pdf
         cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mdi:"+iconname+".pdf")
@@ -181,7 +181,7 @@ for iconname in subfolders:
             filename = add_stroke(filename, stroke_fill)
 
         # Store the SVG version for easy use with e.g. Draw.io
-        #shutil.copy(filename, outdir+"/svg/fill/mdi:"+iconname+".svg")
+        shutil.copy(filename, outdir+"/svg/fill/mdi:"+iconname+".svg")
 
         # Convert to pdf
         cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mdi:"+iconname+".pdf")
