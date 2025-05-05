@@ -1,18 +1,5 @@
 <mxlibrary>[
   {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=light-dark(#c0c0ff, #3b3f72);strokeColor=light-dark(#0000FF,#EDEDED);strokeWidth=0.75;rounded=1;imageWidth=24;imageHeight=24;arcSize=12;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 40,
-    "h": 40,
-    "aspect": "fixed",
-    "title": "Device"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;curved=0;strokeWidth=0.75;strokeColor=#1200FF;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 0.2777777777777778,
-    "h": 30,
-    "aspect": "fixed"
-  },
-  {
     "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;gradientColor=light-dark(#c0c0c0, #ededed);strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
     "w": 40,
     "h": 40,
@@ -20,43 +7,18 @@
     "title": "Physical"
   },
   {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1.5;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 0.2777777777777778,
-    "h": 30,
-    "aspect": "fixed"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=4;rounded=1;size=12;strokeColor=#008080;gradientColor=#C0E0E0;strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 46,
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;gradientColor=light-dark(#c0c0c0, #ededed);strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry x=\"8\" y=\"8\" width=\"24\" height=\"24\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
     "h": 40,
     "aspect": "fixed",
-    "title": "Control"
+    "title": "Physical"
   },
   {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#008080;strokeWidth=1.5;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;Array as=\"points\"&gt;&lt;mxPoint y=\"20\"/&gt;&lt;mxPoint y=\"20\"/&gt;&lt;/Array&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 0.2777777777777778,
-    "h": 30,
-    "aspect": "fixed"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeColor=#FF0000;gradientColor=#FFC2C2;strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 56,
-    "h": 56,
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;gradientColor=light-dark(#c0c0c0, #ededed);strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\".\" style=\"group;strokeWidth=0.5;\" vertex=\"1\" connectable=\"0\" parent=\"2\"&gt;&lt;mxGeometry x=\"7\" y=\"8\" width=\"28\" height=\"27\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=80;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry width=\"19\" height=\"19\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC42NDE1MDM5MDYyNSIgdmlld0JveD0iOTMuODcwMDAyNzQ2NTgyMDMgLTg2Ni43MDAwNzMyNDIxODc1IDc3Mi44MzAwNzgxMjUgNzcyLjgzMDEzOTE2MDE1NjIiIGhlaWdodD0iMzguNjQxNTA2OTU4MDA3ODEiPjxwYXRoIGQ9Ik0xODUuMDktMTA1Ljg3cS0zMi41MSAwLTU1Ljg3LTIzLjM1LTIzLjM1LTIzLjM2LTIzLjM1LTU1Ljg3di01ODkuODJxMC0zMi43NCAyMy4zNS01Ni4yNiAyMy4zNi0yMy41MyA1NS44Ny0yMy41M2g1ODkuODJxMzIuNzQgMCA1Ni4yNiAyMy41MyAyMy41MyAyMy41MiAyMy41MyA1Ni4yNnY1ODkuODJxMCAzMi41MS0yMy41MyA1NS44Ny0yMy41MiAyMy4zNS01Ni4yNiAyMy4zNUgxODUuMDlabTQzLjU2LTE2Ni4wNGg1MDMuN0w1NzgtNDgxLjQ4bC0xMzIgMTcxLTkzLTEyNy0xMjQuMzUgMTY1LjU3WiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlPSJ3aGl0ZSIvPjwvc3ZnPg==;imageBorder=none;strokeWidth=0.1;perimeterSpacing=0;imageBackground=none;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry x=\"13\" y=\"12\" width=\"13\" height=\"13\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
     "aspect": "fixed",
-    "title": "Interact"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;strokeWidth=0.75;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"22\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 0.1342281879194631,
-    "h": 21.999999999999982,
-    "aspect": "fixed"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=none;strokeColor=none;strokeWidth=1;rounded=0;imageWidth=24;imageHeight=24;arcSize=12;fillColor=light-dark(#0000ff, #ededed);\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"10\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 10,
-    "h": 10,
-    "aspect": "fixed",
-    "title": "Device Node"
+    "title": "Physical"
   },
   {
     "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;gradientColor=none;strokeWidth=0.75;strokeColor=none;fillColor=#000000;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"10\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
@@ -66,11 +28,102 @@
     "title": "Physical Node"
   },
   {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1.5;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 0.2777777777777778,
+    "h": 30,
+    "aspect": "fixed",
+    "title": "Physical"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=light-dark(#c0c0ff, #3b3f72);strokeColor=light-dark(#0000FF,#EDEDED);strokeWidth=0.75;rounded=1;imageWidth=24;imageHeight=24;arcSize=12;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Device"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=light-dark(#c0c0ff, #3b3f72);strokeColor=light-dark(#0000FF,#EDEDED);strokeWidth=0.75;rounded=1;imageWidth=24;imageHeight=24;arcSize=12;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry x=\"8\" y=\"8\" width=\"24\" height=\"24\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Device"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=light-dark(#c0c0ff, #3b3f72);strokeColor=light-dark(#0000FF,#EDEDED);strokeWidth=0.75;rounded=1;imageWidth=24;imageHeight=24;arcSize=12;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\".\" style=\"group;strokeWidth=0.5;\" vertex=\"1\" connectable=\"0\" parent=\"2\"&gt;&lt;mxGeometry x=\"7\" y=\"8\" width=\"28\" height=\"27\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=80;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry width=\"19\" height=\"19\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC42NDE1MDM5MDYyNSIgdmlld0JveD0iOTMuODcwMDAyNzQ2NTgyMDMgLTg2Ni43MDAwNzMyNDIxODc1IDc3Mi44MzAwNzgxMjUgNzcyLjgzMDEzOTE2MDE1NjIiIGhlaWdodD0iMzguNjQxNTA2OTU4MDA3ODEiPjxwYXRoIGQ9Ik0xODUuMDktMTA1Ljg3cS0zMi41MSAwLTU1Ljg3LTIzLjM1LTIzLjM1LTIzLjM2LTIzLjM1LTU1Ljg3di01ODkuODJxMC0zMi43NCAyMy4zNS01Ni4yNiAyMy4zNi0yMy41MyA1NS44Ny0yMy41M2g1ODkuODJxMzIuNzQgMCA1Ni4yNiAyMy41MyAyMy41MyAyMy41MiAyMy41MyA1Ni4yNnY1ODkuODJxMCAzMi41MS0yMy41MyA1NS44Ny0yMy41MiAyMy4zNS01Ni4yNiAyMy4zNUgxODUuMDlabTQzLjU2LTE2Ni4wNGg1MDMuN0w1NzgtNDgxLjQ4bC0xMzIgMTcxLTkzLTEyNy0xMjQuMzUgMTY1LjU3WiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlPSJ3aGl0ZSIvPjwvc3ZnPg==;imageBorder=none;strokeWidth=0.1;perimeterSpacing=0;imageBackground=none;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry x=\"13\" y=\"12\" width=\"13\" height=\"13\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Device"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=none;strokeColor=none;strokeWidth=1;rounded=0;imageWidth=24;imageHeight=24;arcSize=12;fillColor=light-dark(#0000ff, #ededed);\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"10\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 10,
+    "h": 10,
+    "aspect": "fixed",
+    "title": "Device Node"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;curved=0;strokeWidth=0.75;strokeColor=#1200FF;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 0.2777777777777778,
+    "h": 30,
+    "aspect": "fixed",
+    "title": "Device"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=4;rounded=1;size=12;strokeColor=#008080;gradientColor=#C0E0E0;strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 46,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Control"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=4;rounded=1;size=12;strokeColor=#008080;gradientColor=#C0E0E0;strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry x=\"11\" y=\"8\" width=\"24\" height=\"24\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 46,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Control"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=4;rounded=1;size=12;strokeColor=#008080;gradientColor=#C0E0E0;strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\".\" style=\"group;strokeWidth=0.5;\" vertex=\"1\" connectable=\"0\" parent=\"2\"&gt;&lt;mxGeometry x=\"10\" y=\"7\" width=\"28\" height=\"27\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=80;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry width=\"19\" height=\"19\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC42NDE1MDM5MDYyNSIgdmlld0JveD0iOTMuODcwMDAyNzQ2NTgyMDMgLTg2Ni43MDAwNzMyNDIxODc1IDc3Mi44MzAwNzgxMjUgNzcyLjgzMDEzOTE2MDE1NjIiIGhlaWdodD0iMzguNjQxNTA2OTU4MDA3ODEiPjxwYXRoIGQ9Ik0xODUuMDktMTA1Ljg3cS0zMi41MSAwLTU1Ljg3LTIzLjM1LTIzLjM1LTIzLjM2LTIzLjM1LTU1Ljg3di01ODkuODJxMC0zMi43NCAyMy4zNS01Ni4yNiAyMy4zNi0yMy41MyA1NS44Ny0yMy41M2g1ODkuODJxMzIuNzQgMCA1Ni4yNiAyMy41MyAyMy41MyAyMy41MiAyMy41MyA1Ni4yNnY1ODkuODJxMCAzMi41MS0yMy41MyA1NS44Ny0yMy41MiAyMy4zNS01Ni4yNiAyMy4zNUgxODUuMDlabTQzLjU2LTE2Ni4wNGg1MDMuN0w1NzgtNDgxLjQ4bC0xMzIgMTcxLTkzLTEyNy0xMjQuMzUgMTY1LjU3WiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlPSJ3aGl0ZSIvPjwvc3ZnPg==;imageBorder=none;strokeWidth=0.1;perimeterSpacing=0;imageBackground=none;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry x=\"13\" y=\"12\" width=\"13\" height=\"13\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 46,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Control"
+  },
+  {
     "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=0;rounded=0;size=3;strokeColor=none;gradientColor=none;fillColor=light-dark(#008080, #ededed);\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"12\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
     "w": 12,
     "h": 10,
     "aspect": "fixed",
     "title": "Control Node"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#008080;strokeWidth=1.5;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;Array as=\"points\"&gt;&lt;mxPoint y=\"20\"/&gt;&lt;mxPoint y=\"20\"/&gt;&lt;/Array&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 0.2777777777777778,
+    "h": 30,
+    "aspect": "fixed",
+    "title": "Control"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeColor=#FF0000;gradientColor=#FFC2C2;strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 56,
+    "h": 56,
+    "aspect": "fixed",
+    "title": "Interact"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeColor=#FF0000;gradientColor=#FFC2C2;strokeWidth=0.75;resizeHeight=0;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry x=\"16\" y=\"16\" width=\"24\" height=\"24\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 56,
+    "h": 56,
+    "aspect": "fixed",
+    "title": "Interact"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeColor=#FF0000;gradientColor=#FFC2C2;strokeWidth=0.75;resizeHeight=0;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\".\" style=\"group;strokeWidth=0.5;\" vertex=\"1\" connectable=\"0\" parent=\"2\"&gt;&lt;mxGeometry x=\"15\" y=\"16\" width=\"28\" height=\"27\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=80;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry width=\"19\" height=\"19\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC42NDE1MDM5MDYyNSIgdmlld0JveD0iOTMuODcwMDAyNzQ2NTgyMDMgLTg2Ni43MDAwNzMyNDIxODc1IDc3Mi44MzAwNzgxMjUgNzcyLjgzMDEzOTE2MDE1NjIiIGhlaWdodD0iMzguNjQxNTA2OTU4MDA3ODEiPjxwYXRoIGQ9Ik0xODUuMDktMTA1Ljg3cS0zMi41MSAwLTU1Ljg3LTIzLjM1LTIzLjM1LTIzLjM2LTIzLjM1LTU1Ljg3di01ODkuODJxMC0zMi43NCAyMy4zNS01Ni4yNiAyMy4zNi0yMy41MyA1NS44Ny0yMy41M2g1ODkuODJxMzIuNzQgMCA1Ni4yNiAyMy41MyAyMy41MyAyMy41MiAyMy41MyA1Ni4yNnY1ODkuODJxMCAzMi41MS0yMy41MyA1NS44Ny0yMy41MiAyMy4zNS01Ni4yNiAyMy4zNUgxODUuMDlabTQzLjU2LTE2Ni4wNGg1MDMuN0w1NzgtNDgxLjQ4bC0xMzIgMTcxLTkzLTEyNy0xMjQuMzUgMTY1LjU3WiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlPSJ3aGl0ZSIvPjwvc3ZnPg==;imageBorder=none;strokeWidth=0.1;perimeterSpacing=0;imageBackground=none;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry x=\"13\" y=\"12\" width=\"13\" height=\"13\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 56,
+    "h": 56,
+    "aspect": "fixed",
+    "title": "Interact"
   },
   {
     "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=0;arcSize=8;strokeColor=none;gradientColor=none;strokeWidth=0.75;fillColor=light-dark(#ff0000, #ededed);\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"10\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
@@ -80,30 +133,11 @@
     "title": "Interact Node"
   },
   {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=light-dark(#C0C0C0,#3B3F72);strokeColor=light-dark(#000000,#EDEDED);strokeWidth=0.75;rounded=1;imageWidth=24;imageHeight=24;arcSize=12;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 40,
-    "h": 40,
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;strokeWidth=0.75;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"22\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 0.1342281879194631,
+    "h": 21.999999999999982,
     "aspect": "fixed",
-    "title": "Device Grey"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;curved=0;strokeWidth=0.75;strokeColor=#000000;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 0.1923076923076923,
-    "h": 30,
-    "aspect": "fixed"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=4;rounded=1;size=12;strokeColor=#808080;gradientColor=light-dark(#e0e0e0, #1d3838);strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 46,
-    "h": 40,
-    "aspect": "fixed",
-    "title": "Control Grey"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#808080;strokeWidth=1.5;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 0.1923076923076923,
-    "h": 30,
-    "aspect": "fixed"
+    "title": "Interact"
   },
   {
     "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;gradientColor=light-dark(#c0c0c0, #ededed);strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
@@ -113,37 +147,18 @@
     "title": "Physical Grey"
   },
   {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1.5;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 0.1923076923076923,
-    "h": 30,
-    "aspect": "fixed"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeColor=#808080;gradientColor=light-dark(#E0E0E0,#EDEDED);strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 56,
-    "h": 56,
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;gradientColor=light-dark(#c0c0c0, #ededed);strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry x=\"8\" y=\"7\" width=\"24\" height=\"24\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
     "aspect": "fixed",
-    "title": "Interact Grey"
+    "title": "Physical Grey"
   },
   {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#808080,#EDEDED);strokeWidth=0.75;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"22\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 0.1923076923076923,
-    "h": 22.000000000000018,
-    "aspect": "fixed"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=none;strokeColor=none;strokeWidth=1;rounded=0;imageWidth=24;imageHeight=24;arcSize=12;fillColor=#000000;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"10\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 10,
-    "h": 10,
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;gradientColor=light-dark(#c0c0c0, #ededed);strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\".\" style=\"group;strokeWidth=0.5;\" vertex=\"1\" connectable=\"0\" parent=\"2\"&gt;&lt;mxGeometry x=\"7\" y=\"8\" width=\"28\" height=\"27\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=80;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry width=\"19\" height=\"19\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC42NDE1MDM5MDYyNSIgdmlld0JveD0iOTMuODcwMDAyNzQ2NTgyMDMgLTg2Ni43MDAwNzMyNDIxODc1IDc3Mi44MzAwNzgxMjUgNzcyLjgzMDEzOTE2MDE1NjIiIGhlaWdodD0iMzguNjQxNTA2OTU4MDA3ODEiPjxwYXRoIGQ9Ik0xODUuMDktMTA1Ljg3cS0zMi41MSAwLTU1Ljg3LTIzLjM1LTIzLjM1LTIzLjM2LTIzLjM1LTU1Ljg3di01ODkuODJxMC0zMi43NCAyMy4zNS01Ni4yNiAyMy4zNi0yMy41MyA1NS44Ny0yMy41M2g1ODkuODJxMzIuNzQgMCA1Ni4yNiAyMy41MyAyMy41MyAyMy41MiAyMy41MyA1Ni4yNnY1ODkuODJxMCAzMi41MS0yMy41MyA1NS44Ny0yMy41MiAyMy4zNS01Ni4yNiAyMy4zNUgxODUuMDlabTQzLjU2LTE2Ni4wNGg1MDMuN0w1NzgtNDgxLjQ4bC0xMzIgMTcxLTkzLTEyNy0xMjQuMzUgMTY1LjU3WiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlPSJ3aGl0ZSIvPjwvc3ZnPg==;imageBorder=none;strokeWidth=0.1;perimeterSpacing=0;imageBackground=none;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry x=\"13\" y=\"12\" width=\"13\" height=\"13\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
     "aspect": "fixed",
-    "title": "Device Node Grey"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=0;rounded=0;size=3;strokeColor=none;gradientColor=none;fillColor=light-dark(#808080,#EDEDED);\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"12\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 12,
-    "h": 10,
-    "aspect": "fixed",
-    "title": "Control Node Grey"
+    "title": "Physical Grey"
   },
   {
     "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;gradientColor=none;strokeWidth=0.75;strokeColor=none;fillColor=#000000;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"10\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
@@ -153,6 +168,104 @@
     "title": "Physical Node Grey"
   },
   {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1.5;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 0.1923076923076923,
+    "h": 30,
+    "aspect": "fixed",
+    "title": "Physical Grey"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=light-dark(#C0C0C0,#3B3F72);strokeColor=light-dark(#000000,#EDEDED);strokeWidth=0.75;rounded=1;imageWidth=24;imageHeight=24;arcSize=12;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Device Grey"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=light-dark(#C0C0C0,#3B3F72);strokeColor=light-dark(#000000,#EDEDED);strokeWidth=0.75;rounded=1;imageWidth=24;imageHeight=24;arcSize=12;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry x=\"8\" y=\"8\" width=\"24\" height=\"24\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Device Grey"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=light-dark(#C0C0C0,#3B3F72);strokeColor=light-dark(#000000,#EDEDED);strokeWidth=0.75;rounded=1;imageWidth=24;imageHeight=24;arcSize=12;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\".\" style=\"group;strokeWidth=0.5;\" vertex=\"1\" connectable=\"0\" parent=\"2\"&gt;&lt;mxGeometry x=\"7\" y=\"8\" width=\"28\" height=\"27\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=80;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry width=\"19\" height=\"19\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC42NDE1MDM5MDYyNSIgdmlld0JveD0iOTMuODcwMDAyNzQ2NTgyMDMgLTg2Ni43MDAwNzMyNDIxODc1IDc3Mi44MzAwNzgxMjUgNzcyLjgzMDEzOTE2MDE1NjIiIGhlaWdodD0iMzguNjQxNTA2OTU4MDA3ODEiPjxwYXRoIGQ9Ik0xODUuMDktMTA1Ljg3cS0zMi41MSAwLTU1Ljg3LTIzLjM1LTIzLjM1LTIzLjM2LTIzLjM1LTU1Ljg3di01ODkuODJxMC0zMi43NCAyMy4zNS01Ni4yNiAyMy4zNi0yMy41MyA1NS44Ny0yMy41M2g1ODkuODJxMzIuNzQgMCA1Ni4yNiAyMy41MyAyMy41MyAyMy41MiAyMy41MyA1Ni4yNnY1ODkuODJxMCAzMi41MS0yMy41MyA1NS44Ny0yMy41MiAyMy4zNS01Ni4yNiAyMy4zNUgxODUuMDlabTQzLjU2LTE2Ni4wNGg1MDMuN0w1NzgtNDgxLjQ4bC0xMzIgMTcxLTkzLTEyNy0xMjQuMzUgMTY1LjU3WiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlPSJ3aGl0ZSIvPjwvc3ZnPg==;imageBorder=none;strokeWidth=0.1;perimeterSpacing=0;imageBackground=none;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry x=\"13\" y=\"12\" width=\"13\" height=\"13\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Device Grey"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=none;strokeColor=none;strokeWidth=1;rounded=0;imageWidth=24;imageHeight=24;arcSize=12;fillColor=#000000;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"10\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 10,
+    "h": 10,
+    "aspect": "fixed",
+    "title": "Device Node Grey"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;curved=0;strokeWidth=0.75;strokeColor=#000000;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 0.1923076923076923,
+    "h": 30,
+    "aspect": "fixed",
+    "title": "Device Grey"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=4;rounded=1;size=12;strokeColor=#808080;gradientColor=light-dark(#e0e0e0, #1d3838);strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 46,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Control Grey"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=4;rounded=1;size=12;strokeColor=#808080;gradientColor=light-dark(#e0e0e0, #1d3838);strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry x=\"11\" y=\"8\" width=\"24\" height=\"24\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 46,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Control Grey"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=4;rounded=1;size=12;strokeColor=#808080;gradientColor=light-dark(#e0e0e0, #1d3838);strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\".\" style=\"group;strokeWidth=0.5;\" vertex=\"1\" connectable=\"0\" parent=\"2\"&gt;&lt;mxGeometry x=\"10\" y=\"7\" width=\"28\" height=\"27\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=80;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry width=\"19\" height=\"19\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC42NDE1MDM5MDYyNSIgdmlld0JveD0iOTMuODcwMDAyNzQ2NTgyMDMgLTg2Ni43MDAwNzMyNDIxODc1IDc3Mi44MzAwNzgxMjUgNzcyLjgzMDEzOTE2MDE1NjIiIGhlaWdodD0iMzguNjQxNTA2OTU4MDA3ODEiPjxwYXRoIGQ9Ik0xODUuMDktMTA1Ljg3cS0zMi41MSAwLTU1Ljg3LTIzLjM1LTIzLjM1LTIzLjM2LTIzLjM1LTU1Ljg3di01ODkuODJxMC0zMi43NCAyMy4zNS01Ni4yNiAyMy4zNi0yMy41MyA1NS44Ny0yMy41M2g1ODkuODJxMzIuNzQgMCA1Ni4yNiAyMy41MyAyMy41MyAyMy41MiAyMy41MyA1Ni4yNnY1ODkuODJxMCAzMi41MS0yMy41MyA1NS44Ny0yMy41MiAyMy4zNS01Ni4yNiAyMy4zNUgxODUuMDlabTQzLjU2LTE2Ni4wNGg1MDMuN0w1NzgtNDgxLjQ4bC0xMzIgMTcxLTkzLTEyNy0xMjQuMzUgMTY1LjU3WiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlPSJ3aGl0ZSIvPjwvc3ZnPg==;imageBorder=none;strokeWidth=0.1;perimeterSpacing=0;imageBackground=none;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry x=\"13\" y=\"12\" width=\"13\" height=\"13\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 46,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Control Grey"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=0;rounded=0;size=3;strokeColor=none;gradientColor=none;fillColor=light-dark(#808080,#EDEDED);\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"12\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 12,
+    "h": 10,
+    "aspect": "fixed",
+    "title": "Control Node Grey"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#808080;strokeWidth=1.5;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 0.1923076923076923,
+    "h": 30,
+    "aspect": "fixed",
+    "title": "Control Grey"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeColor=#808080;gradientColor=light-dark(#E0E0E0,#EDEDED);strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 56,
+    "h": 56,
+    "aspect": "fixed",
+    "title": "Interact Grey"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeColor=#808080;gradientColor=light-dark(#E0E0E0,#EDEDED);strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry x=\"16\" y=\"17\" width=\"24\" height=\"24\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 56,
+    "h": 56,
+    "aspect": "fixed",
+    "title": "Interact Grey"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeColor=#808080;gradientColor=light-dark(#E0E0E0,#EDEDED);strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\".\" style=\"group;strokeWidth=0.5;\" vertex=\"1\" connectable=\"0\" parent=\"2\"&gt;&lt;mxGeometry x=\"15\" y=\"16\" width=\"28\" height=\"27\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=80;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry width=\"19\" height=\"19\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC42NDE1MDM5MDYyNSIgdmlld0JveD0iOTMuODcwMDAyNzQ2NTgyMDMgLTg2Ni43MDAwNzMyNDIxODc1IDc3Mi44MzAwNzgxMjUgNzcyLjgzMDEzOTE2MDE1NjIiIGhlaWdodD0iMzguNjQxNTA2OTU4MDA3ODEiPjxwYXRoIGQ9Ik0xODUuMDktMTA1Ljg3cS0zMi41MSAwLTU1Ljg3LTIzLjM1LTIzLjM1LTIzLjM2LTIzLjM1LTU1Ljg3di01ODkuODJxMC0zMi43NCAyMy4zNS01Ni4yNiAyMy4zNi0yMy41MyA1NS44Ny0yMy41M2g1ODkuODJxMzIuNzQgMCA1Ni4yNiAyMy41MyAyMy41MyAyMy41MiAyMy41MyA1Ni4yNnY1ODkuODJxMCAzMi41MS0yMy41MyA1NS44Ny0yMy41MiAyMy4zNS01Ni4yNiAyMy4zNUgxODUuMDlabTQzLjU2LTE2Ni4wNGg1MDMuN0w1NzgtNDgxLjQ4bC0xMzIgMTcxLTkzLTEyNy0xMjQuMzUgMTY1LjU3WiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlPSJ3aGl0ZSIvPjwvc3ZnPg==;imageBorder=none;strokeWidth=0.1;perimeterSpacing=0;imageBackground=none;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry x=\"13\" y=\"12\" width=\"13\" height=\"13\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 56,
+    "h": 56,
+    "aspect": "fixed",
+    "title": "Interact Grey"
+  },
+  {
     "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=0;arcSize=8;strokeColor=none;gradientColor=none;strokeWidth=0.75;fillColor=light-dark(#808080,#EDEDED);\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"10\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
     "w": 10,
     "h": 10,
@@ -160,30 +273,11 @@
     "title": "Interact Node Grey"
   },
   {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=light-dark(#EFEFEF,#3B3F72);strokeColor=light-dark(#BFBFBF,#EDEDED);strokeWidth=0.75;rounded=1;imageWidth=24;imageHeight=24;arcSize=12;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 40,
-    "h": 40,
-    "aspect": "fixed",
-    "title": "Device Light"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;curved=0;strokeWidth=0.75;strokeColor=#BFBFBF;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#808080,#EDEDED);strokeWidth=0.75;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"22\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
     "w": 0.1923076923076923,
-    "h": 30,
-    "aspect": "fixed"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=4;rounded=1;size=12;strokeColor=#BFBFBF;gradientColor=light-dark(#EFEFEF,#EDEDED);strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 46,
-    "h": 40,
+    "h": 22.000000000000018,
     "aspect": "fixed",
-    "title": "Control Light"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#BFBFBF;strokeWidth=1.5;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 0.1923076923076923,
-    "h": 30,
-    "aspect": "fixed"
+    "title": "Interact Grey"
   },
   {
     "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;gradientColor=light-dark(#EFEFEF,#EDEDED);strokeWidth=0.75;strokeColor=#BFBFBF;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
@@ -193,37 +287,18 @@
     "title": "Physical Light"
   },
   {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1.5;curved=0;strokeColor=#BFBFBF;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 0.1923076923076923,
-    "h": 30,
-    "aspect": "fixed"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeColor=#BFBFBF;gradientColor=light-dark(#EFEFEF,#EDEDED);strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 56,
-    "h": 56,
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;gradientColor=light-dark(#EFEFEF,#EDEDED);strokeWidth=0.75;strokeColor=#BFBFBF;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=40;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry x=\"8\" y=\"7.5\" width=\"24\" height=\"24\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
     "aspect": "fixed",
-    "title": "Interact Light"
+    "title": "Physical Light"
   },
   {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#BFBFBF;strokeWidth=0.75;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"22\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 0.1923076923076923,
-    "h": 22.000000000000018,
-    "aspect": "fixed"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=none;strokeColor=none;strokeWidth=1;rounded=0;imageWidth=24;imageHeight=24;arcSize=12;fillColor=light-dark(#bfbfbf, #ededed);\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"10\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 10,
-    "h": 10,
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;gradientColor=light-dark(#EFEFEF,#EDEDED);strokeWidth=0.75;strokeColor=#BFBFBF;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\".\" style=\"group;strokeWidth=0.5;\" vertex=\"1\" connectable=\"0\" parent=\"2\"&gt;&lt;mxGeometry x=\"7\" y=\"8\" width=\"28\" height=\"27\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=30;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry width=\"19\" height=\"19\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC42NDE1MDM5MDYyNSIgdmlld0JveD0iOTMuODcwMDAyNzQ2NTgyMDMgLTg2Ni43MDAwNzMyNDIxODc1IDc3Mi44MzAwNzgxMjUgNzcyLjgzMDEzOTE2MDE1NjIiIGhlaWdodD0iMzguNjQxNTA2OTU4MDA3ODEiPjxwYXRoIGQ9Ik0xODUuMDktMTA1Ljg3cS0zMi41MSAwLTU1Ljg3LTIzLjM1LTIzLjM1LTIzLjM2LTIzLjM1LTU1Ljg3di01ODkuODJxMC0zMi43NCAyMy4zNS01Ni4yNiAyMy4zNi0yMy41MyA1NS44Ny0yMy41M2g1ODkuODJxMzIuNzQgMCA1Ni4yNiAyMy41MyAyMy41MyAyMy41MiAyMy41MyA1Ni4yNnY1ODkuODJxMCAzMi41MS0yMy41MyA1NS44Ny0yMy41MiAyMy4zNS01Ni4yNiAyMy4zNUgxODUuMDlabTQzLjU2LTE2Ni4wNGg1MDMuN0w1NzgtNDgxLjQ4bC0xMzIgMTcxLTkzLTEyNy0xMjQuMzUgMTY1LjU3WiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlPSJ3aGl0ZSIvPjwvc3ZnPg==;imageBorder=none;strokeWidth=0.1;perimeterSpacing=0;imageBackground=none;opacity=40;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry x=\"13\" y=\"12\" width=\"13\" height=\"13\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
     "aspect": "fixed",
-    "title": "Device Node Light"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=0;rounded=0;size=3;strokeColor=none;gradientColor=none;fillColor=light-dark(#bfbfbf, #ededed);\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"12\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 12,
-    "h": 10,
-    "aspect": "fixed",
-    "title": "Control Node Light"
+    "title": "Physical Light"
   },
   {
     "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;gradientColor=none;strokeWidth=0.75;strokeColor=none;fillColor=light-dark(#bfbfbf, #ededed);\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"10\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
@@ -233,10 +308,115 @@
     "title": "Physical Node Light"
   },
   {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1.5;curved=0;strokeColor=#BFBFBF;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 0.1923076923076923,
+    "h": 30,
+    "aspect": "fixed",
+    "title": "Physical Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=light-dark(#EFEFEF,#3B3F72);strokeColor=light-dark(#BFBFBF,#EDEDED);strokeWidth=0.75;rounded=1;imageWidth=24;imageHeight=24;arcSize=12;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Device Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=light-dark(#EFEFEF,#3B3F72);strokeColor=light-dark(#BFBFBF,#EDEDED);strokeWidth=0.75;rounded=1;imageWidth=24;imageHeight=24;arcSize=12;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;imageBackground=default;opacity=40;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry x=\"8\" y=\"8.5\" width=\"24\" height=\"24\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Device Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=light-dark(#EFEFEF,#3B3F72);strokeColor=light-dark(#BFBFBF,#EDEDED);strokeWidth=0.75;rounded=1;imageWidth=24;imageHeight=24;arcSize=12;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"40\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\".\" style=\"group;strokeWidth=0.5;\" vertex=\"1\" connectable=\"0\" parent=\"2\"&gt;&lt;mxGeometry x=\"7\" y=\"8\" width=\"28\" height=\"27\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=30;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry width=\"19\" height=\"19\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC42NDE1MDM5MDYyNSIgdmlld0JveD0iOTMuODcwMDAyNzQ2NTgyMDMgLTg2Ni43MDAwNzMyNDIxODc1IDc3Mi44MzAwNzgxMjUgNzcyLjgzMDEzOTE2MDE1NjIiIGhlaWdodD0iMzguNjQxNTA2OTU4MDA3ODEiPjxwYXRoIGQ9Ik0xODUuMDktMTA1Ljg3cS0zMi41MSAwLTU1Ljg3LTIzLjM1LTIzLjM1LTIzLjM2LTIzLjM1LTU1Ljg3di01ODkuODJxMC0zMi43NCAyMy4zNS01Ni4yNiAyMy4zNi0yMy41MyA1NS44Ny0yMy41M2g1ODkuODJxMzIuNzQgMCA1Ni4yNiAyMy41MyAyMy41MyAyMy41MiAyMy41MyA1Ni4yNnY1ODkuODJxMCAzMi41MS0yMy41MyA1NS44Ny0yMy41MiAyMy4zNS01Ni4yNiAyMy4zNUgxODUuMDlabTQzLjU2LTE2Ni4wNGg1MDMuN0w1NzgtNDgxLjQ4bC0xMzIgMTcxLTkzLTEyNy0xMjQuMzUgMTY1LjU3WiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlPSJ3aGl0ZSIvPjwvc3ZnPg==;imageBorder=none;strokeWidth=0.1;perimeterSpacing=0;imageBackground=none;opacity=40;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry x=\"13\" y=\"12\" width=\"13\" height=\"13\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Device Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"whiteSpace=wrap;html=1;aspect=fixed;gradientColor=none;strokeColor=none;strokeWidth=1;rounded=0;imageWidth=24;imageHeight=24;arcSize=12;fillColor=light-dark(#bfbfbf, #ededed);\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"10\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 10,
+    "h": 10,
+    "aspect": "fixed",
+    "title": "Device Node Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;curved=0;strokeWidth=0.75;strokeColor=#BFBFBF;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 0.1923076923076923,
+    "h": 30,
+    "aspect": "fixed",
+    "title": "Device Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=4;rounded=1;size=12;strokeColor=#BFBFBF;gradientColor=light-dark(#EFEFEF,#EDEDED);strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"-1.1368683772161603e-13\" width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 46,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Control Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=4;rounded=1;size=12;strokeColor=#BFBFBF;gradientColor=light-dark(#EFEFEF,#EDEDED);strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=40;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry x=\"11\" y=\"8.5\" width=\"24\" height=\"24\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 46,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Control Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=4;rounded=1;size=12;strokeColor=#BFBFBF;gradientColor=light-dark(#EFEFEF,#EDEDED);strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"46\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\".\" style=\"group;strokeWidth=0.5;\" vertex=\"1\" connectable=\"0\" parent=\"2\"&gt;&lt;mxGeometry x=\"10\" y=\"7\" width=\"28\" height=\"27\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=30;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry width=\"19\" height=\"19\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC42NDE1MDM5MDYyNSIgdmlld0JveD0iOTMuODcwMDAyNzQ2NTgyMDMgLTg2Ni43MDAwNzMyNDIxODc1IDc3Mi44MzAwNzgxMjUgNzcyLjgzMDEzOTE2MDE1NjIiIGhlaWdodD0iMzguNjQxNTA2OTU4MDA3ODEiPjxwYXRoIGQ9Ik0xODUuMDktMTA1Ljg3cS0zMi41MSAwLTU1Ljg3LTIzLjM1LTIzLjM1LTIzLjM2LTIzLjM1LTU1Ljg3di01ODkuODJxMC0zMi43NCAyMy4zNS01Ni4yNiAyMy4zNi0yMy41MyA1NS44Ny0yMy41M2g1ODkuODJxMzIuNzQgMCA1Ni4yNiAyMy41MyAyMy41MyAyMy41MiAyMy41MyA1Ni4yNnY1ODkuODJxMCAzMi41MS0yMy41MyA1NS44Ny0yMy41MiAyMy4zNS01Ni4yNiAyMy4zNUgxODUuMDlabTQzLjU2LTE2Ni4wNGg1MDMuN0w1NzgtNDgxLjQ4bC0xMzIgMTcxLTkzLTEyNy0xMjQuMzUgMTY1LjU3WiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlPSJ3aGl0ZSIvPjwvc3ZnPg==;imageBorder=none;strokeWidth=0.1;perimeterSpacing=0;imageBackground=none;opacity=40;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry x=\"13\" y=\"12\" width=\"13\" height=\"13\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 46,
+    "h": 40,
+    "aspect": "fixed",
+    "title": "Control Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;arcSize=0;rounded=0;size=3;strokeColor=none;gradientColor=none;fillColor=light-dark(#bfbfbf, #ededed);\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"12\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 12,
+    "h": 10,
+    "aspect": "fixed",
+    "title": "Control Node Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#BFBFBF;strokeWidth=1.5;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"30\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 0.1923076923076923,
+    "h": 30,
+    "aspect": "fixed",
+    "title": "Control Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeColor=#BFBFBF;gradientColor=light-dark(#EFEFEF,#EDEDED);strokeWidth=0.75;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 56,
+    "h": 56,
+    "aspect": "fixed",
+    "title": "Interact Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeColor=#BFBFBF;gradientColor=light-dark(#EFEFEF,#EDEDED);strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=40;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry x=\"16\" y=\"16.5\" width=\"24\" height=\"24\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 56,
+    "h": 56,
+    "aspect": "fixed",
+    "title": "Interact Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"group\" vertex=\"1\" connectable=\"0\" parent=\"1\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=8;strokeColor=#BFBFBF;gradientColor=light-dark(#EFEFEF,#EDEDED);strokeWidth=0.75;\" vertex=\"1\" parent=\"2\"&gt;&lt;mxGeometry width=\"56\" height=\"56\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\".\" style=\"group;strokeWidth=0.5;opacity=40;\" vertex=\"1\" connectable=\"0\" parent=\"2\"&gt;&lt;mxGeometry x=\"15\" y=\"16\" width=\"28\" height=\"27\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgdmlld0JveD0iMTIwIC04NDAgNzIwIDcyMCIgaGVpZ2h0PSIzNiI+PHBhdGggZD0iTTE4MC0xMjBxLTI0IDAtNDItMTh0LTE4LTQydi02MDBxMC0yNCAxOC00MnQ0Mi0xOGg2MDBxMjQgMCA0MiAxOHQxOCA0MnY2MDBxMCAyNC0xOCA0MnQtNDIgMThIMTgwWm0wLTYwaDYwMHYtNjAwSDE4MHY2MDBabTU2LTk3aDQ4OUw1NzgtNDczIDQ0Ni0zMDJsLTkzLTEyNy0xMTcgMTUyWm0tNTYgOTd2LTYwMCA2MDBaIi8+PC9zdmc+;opacity=30;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry width=\"19\" height=\"19\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"\" style=\"shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;editableCssRules=.*;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC42NDE1MDM5MDYyNSIgdmlld0JveD0iOTMuODcwMDAyNzQ2NTgyMDMgLTg2Ni43MDAwNzMyNDIxODc1IDc3Mi44MzAwNzgxMjUgNzcyLjgzMDEzOTE2MDE1NjIiIGhlaWdodD0iMzguNjQxNTA2OTU4MDA3ODEiPjxwYXRoIGQ9Ik0xODUuMDktMTA1Ljg3cS0zMi41MSAwLTU1Ljg3LTIzLjM1LTIzLjM1LTIzLjM2LTIzLjM1LTU1Ljg3di01ODkuODJxMC0zMi43NCAyMy4zNS01Ni4yNiAyMy4zNi0yMy41MyA1NS44Ny0yMy41M2g1ODkuODJxMzIuNzQgMCA1Ni4yNiAyMy41MyAyMy41MyAyMy41MiAyMy41MyA1Ni4yNnY1ODkuODJxMCAzMi41MS0yMy41MyA1NS44Ny0yMy41MiAyMy4zNS01Ni4yNiAyMy4zNUgxODUuMDlabTQzLjU2LTE2Ni4wNGg1MDMuN0w1NzgtNDgxLjQ4bC0xMzIgMTcxLTkzLTEyNy0xMjQuMzUgMTY1LjU3WiIgc3Ryb2tlLXdpZHRoPSIyNCIgc3Ryb2tlPSJ3aGl0ZSIvPjwvc3ZnPg==;imageBorder=none;strokeWidth=0.1;perimeterSpacing=0;imageBackground=none;opacity=40;\" vertex=\"1\" parent=\"4\"&gt;&lt;mxGeometry x=\"13\" y=\"12\" width=\"13\" height=\"13\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 56,
+    "h": 56,
+    "aspect": "fixed",
+    "title": "Interact Light"
+  },
+  {
     "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"rhombus;whiteSpace=wrap;html=1;rounded=0;arcSize=8;strokeColor=none;gradientColor=none;strokeWidth=0.75;fillColor=light-dark(#bfbfbf, #ededed);\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"10\" height=\"10\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
     "w": 10,
     "h": 10,
     "aspect": "fixed",
     "title": "Interact Node Light"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#BFBFBF;strokeWidth=0.75;curved=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"22\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 0.1923076923076923,
+    "h": 22.000000000000018,
+    "aspect": "fixed",
+    "title": "Interact Light"
   }
 ]</mxlibrary>
