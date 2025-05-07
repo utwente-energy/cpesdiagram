@@ -1,0 +1,138 @@
+% Copyright 2025 University of Twente
+%
+% Licensed under the Apache License, Version 2.0 (the "License");
+% you may not use this file except in compliance with the License.
+% You may obtain a copy of the License at
+%
+%     http://www.apache.org/licenses/LICENSE-2.0
+%
+% Unless required by applicable law or agreed to in writing, software
+% distributed under the License is distributed on an "AS IS" BASIS,
+% WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+% See the License for the specific language governing permissions and
+% limitations under the License.
+
+\input{cpesdiag/cpesdiag.tex}
+\cpesstyle
+
+% use the following style instead to have the diagram in grayscale
+% \cpesstylegrey
+
+% use the following style instead to have the diagram in light grey colours
+% \cpesstylelight
+
+% use the following command to have a dashed line
+% \CPESdashed
+% and restore using
+% \CPESsolid
+
+% These commands can be used in the figure to switch between styles
+
+\begin{tikzpicture} 
+% PHY:
+% mds:grid_on
+% mds:join
+% mds:electric_meter
+% mds:electric_meter
+%
+%
+% DEV
+% mds:battery_android_4
+% mds:solar_power
+% mds:local_laundry_service
+% mds:ev_charger
+% mds:electric_car
+%
+%
+% CYBER
+% mds:memory
+% mds:network_intelligence
+%
+% mds:house
+% mds:communities
+%
+%
+% INTERACT
+% mds:person
+% mds:groups
+% mds:euro
+% mds:gavel
+% mds:domain
+% mds:things_to_do
+
+
+% Physical nodes
+\phynodex{grid}{0,0}{mds:join}{label={}};
+
+
+% Control nodes
+\controlnodedx{gs}{1.5,0}{mds:memory}{mds:ev_charger}{label={}};
+\controlnodedx{c0}{4.2,-0.2}{mds:memory}{mds:ev_charger}{label={}};
+\controlnodedx{c1}{4.1,-0.1}{mds:memory}{mds:ev_charger}{label={}};
+\controlnodedx{c2}{4,0}{mds:memory}{mds:ev_charger}{label={}};
+
+\draw [->, clinku] (gs.east) -- (c2.west);
+\draw [->, clinku] (grid.east) -- (gs.west);
+
+
+% Device nodes and control links cascade
+\devicenodex{ev0}{5.7,-0.2}{mds:ev_charger}{label={}};
+\draw [->, clinku] (c0.east) -- (ev0.west);
+
+\devicenodex{ev1}{5.6,-0.1}{mds:ev_charger}{label={}};
+\draw [->, clinku] (c1.east) -- (ev1.west);
+
+\devicenodex{ev2}{5.5,0}{mds:ev_charger}{label={}};
+\draw [->, clinku] (c2.east) -- (ev2.west);
+
+
+
+\dnodex{d0}{5.7,-1}{};
+\dnodex{d1}{5.6,-1}{};
+\dnodex{d2}{5.5,-1}{};
+
+\draw [->, dlink] (d0.north) -- (ev0.south);
+\draw [->, dlink] (d1.north) -- (ev1.south);
+\draw [->, dlink] (d2.north) -- (ev2.south);
+
+\draw [<-, dlink] (d2.west) -| (grid.south);
+
+
+
+
+
+%
+%
+% % Device links
+% \draw [<->, dlink] (meter.south) |- (d0.west);
+% \draw [<-, dlink] (d0.south) -- (pv.north);
+% \draw [->, dlink] (d0.east) -- (evse.west);
+% \draw [->, dlink] (evse.south) -- (ev.north);
+%
+%
+%
+% % Control links
+% \draw [->, clink] (cc.west) -- (evse.east);
+% \draw [->, clink] (evc.west) -- (ev.east);
+% \draw [->, clinku] (meter.east) -| (cc.north);
+%
+% % Interaction links
+% \draw [->, ilink] (cpo.west) -- (cc.east);
+% \draw [->, ilinku] (market.west) -- (evc.east);
+% \draw [->, ilink] (user.north) |- (cpo.east);
+% \draw [->, ilink] (user.west) -| (ev.south);
+
+
+% Light drawing
+\cpesstylelight
+\devicenodex{dev}{7,0}{mds:solar_power}{label={}};
+\dnodex{d3}{7,-1}{};
+\draw [<-, dlink] (d0.east) -- (d3.west);
+\draw [->, dlink] (d3.north) -- (dev.south);
+\pnodex{gn}{-1,0}{};
+\draw [plink] (gn.east) -- (grid.west);
+
+
+\cpesstyle
+
+\end{tikzpicture}

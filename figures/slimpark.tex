@@ -1,0 +1,110 @@
+% Copyright 2025 University of Twente
+%
+% Licensed under the Apache License, Version 2.0 (the "License");
+% you may not use this file except in compliance with the License.
+% You may obtain a copy of the License at
+%
+%     http://www.apache.org/licenses/LICENSE-2.0
+%
+% Unless required by applicable law or agreed to in writing, software
+% distributed under the License is distributed on an "AS IS" BASIS,
+% WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+% See the License for the specific language governing permissions and
+% limitations under the License.
+
+\input{cpesdiag/cpesdiag.tex}
+\cpesstyle
+
+% use the following style instead to have the diagram in grayscale
+% \cpesstylegrey
+
+% use the following style instead to have the diagram in light grey colours
+% \cpesstylelight
+
+% use the following command to have a dashed line
+% \CPESdashed
+% and restore using
+% \CPESsolid
+
+% These commands can be used in the figure to switch between styles
+
+\begin{tikzpicture} 
+% PHY:
+% mds:grid_on
+% mds:join
+% mds:electric_meter
+% mds:electric_meter
+%
+%
+% DEV
+% mds:battery_android_4
+% mds:solar_power
+% mds:local_laundry_service
+% mds:ev_charger
+% mds:electric_car
+%
+%
+% CYBER
+% mds:memory
+% mds:network_intelligence
+%
+% mds:house
+% mds:communities
+%
+%
+% INTERACT
+% mds:person
+% mds:groups
+% mds:euro
+% mds:gavel
+% mds:domain
+% mds:things_to_do
+
+
+% Physical nodes
+\phynodex{meter}{0,1}{mds:electric_meter}{label={above:\tiny{power grid}}};
+
+
+% Device nodes
+\devicenodex{pv}{1,-1.5}{mds:solar_power}{label={}};
+\devicenodex{evse}{2.5,0}{mds:ev_charger}{label={}};
+\devicenodex{ev}{2.5,-1.5}{mds:electric_car}{label={}};
+
+
+\dnodex{d0}{1,0}{};
+
+
+% Control nodes
+\controlnodedx{cc}{4,0}{mds:memory}{mds:ev_charger}{label={}};
+\controlnodedx{evc}{4,-1.5}{mds:memory}{mds:electric_car}{label={}};
+
+
+% Interaction nodes
+\interactnodex{cpo}{5.5,0}{mds:domain}{label={}};
+\interactnodex{user}{6.5,-2.25}{mds:person}{label={}};
+\interactnodedx{market}{5.5,-1.5}{mds:gavel}{mds:euro}{label={}};
+
+
+
+% Device links
+\draw [<->, dlink] (meter.south) |- (d0.west);
+\draw [<-, dlink] (d0.south) -- (pv.north);
+\draw [->, dlink] (d0.east) -- (evse.west);
+\draw [->, dlink] (evse.south) -- (ev.north);
+
+
+
+% Control links
+\draw [->, clink] (cc.west) -- (evse.east);
+\draw [->, clink] (evc.west) -- (ev.east);
+\draw [->, clinku] (meter.east) -| (cc.north);
+
+% Interaction links
+\draw [->, ilink] (cpo.west) -- (cc.east);
+\draw [->, ilinku] (market.west) -- (evc.east);
+\draw [->, ilink] (user.north) |- (cpo.east);
+\draw [->, ilink] (user.west) -| (ev.south);
+
+
+
+\end{tikzpicture}
