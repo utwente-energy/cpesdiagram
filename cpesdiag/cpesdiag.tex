@@ -26,6 +26,8 @@
 \newcommand\CPESTransparencySmall{0.6}
 
 \newcommand\CPESOutline{solid}
+\newcommand\CPESBilink{solid}
+\newcommand\CPESUnilink{densely dotted}
 
 % Functions to switch between colour schemes
 % Default colours
@@ -75,10 +77,14 @@
 % Macros to switch between actual devices and virtual elements
 \def \CPESsolid{
   \renewcommand\CPESOutline{solid}
+  \renewcommand\CPESBilink{solid}
+  \renewcommand\CPESUnilink{densely dotted}
 }
 
 \def \CPESdashed{
   \renewcommand\CPESOutline{dashed}
+  \renewcommand\CPESBilink{dashed}
+  \renewcommand\CPESUnilink{loosely dashdotted}
 }
 
 
@@ -113,17 +119,17 @@
 \tikzset{
 % Style for links between nodes
   % Devices
-  dlink/.style={\CPESColourDevice, rounded corners=5pt, text=\CPESColourText},
+  dlink/.style={\CPESColourDevice, \CPESBilink, rounded corners=5pt, text=\CPESColourText},
   % Physical
-  plink/.style={\CPESColourPhy, thick, rounded corners=5pt, text=\CPESColourText},
+  plink/.style={\CPESColourPhy, \CPESBilink, thick, rounded corners=5pt, text=\CPESColourText},
   % Cyber controllers
-  clink/.style={\CPESColourControl, thick, rounded corners=5pt, text=\CPESColourText},
+  clink/.style={\CPESColourControl, \CPESBilink, thick, rounded corners=5pt, text=\CPESColourText},
   % Cyber controllers (uni-directional)
-  clinku/.style={\CPESColourControl, densely dotted, thick, rounded corners=5pt, text=\CPESColourText},
+  clinku/.style={\CPESColourControl, \CPESUnilink, thick, rounded corners=5pt, text=\CPESColourText},
   % Societal interaction
-  ilink/.style={\CPESColourInteraction, rounded corners=5pt, text=\CPESColourText},
+  ilink/.style={\CPESColourInteraction, \CPESBilink, rounded corners=5pt, text=\CPESColourText},
   % Societal interaction (uni-directional)
-  ilinku/.style={\CPESColourInteraction, densely dotted, rounded corners=5pt, text=\CPESColourText}
+  ilinku/.style={\CPESColourInteraction, \CPESUnilink, rounded corners=5pt, text=\CPESColourText}
   }
 }
 

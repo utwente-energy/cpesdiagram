@@ -1,0 +1,111 @@
+% Copyright 2025 University of Twente
+%
+% Licensed under the Apache License, Version 2.0 (the "License");
+% you may not use this file except in compliance with the License.
+% You may obtain a copy of the License at
+%
+%     http://www.apache.org/licenses/LICENSE-2.0
+%
+% Unless required by applicable law or agreed to in writing, software
+% distributed under the License is distributed on an "AS IS" BASIS,
+% WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+% See the License for the specific language governing permissions and
+% limitations under the License.
+
+\input{cpesdiag/cpesdiag.tex}
+\cpesstyle
+
+% use the following style instead to have the diagram in grayscale
+% \cpesstylegrey
+
+% use the following style instead to have the diagram in light grey colours
+% \cpesstylelight
+
+% use the following command to have a dashed line
+% \CPESdashed
+% and restore using
+% \CPESsolid
+
+% These commands can be used in the figure to switch between styles
+
+\begin{tikzpicture} 
+% PHY:
+% mds:grid_on
+% mds:join
+% mds:electric_meter
+% mds:electric_meter
+%
+%
+% DEV
+% mds:battery_android_4
+% mds:solar_power
+% mds:local_laundry_service
+% mds:ev_charger
+% mds:electric_car
+%
+%
+% CYBER
+% mds:memory
+% mds:network_intelligence
+%
+% mds:house
+% mds:communities
+%
+%
+% INTERACT
+% mds:person
+% mds:groups
+% mds:euro
+% mds:gavel
+% mds:domain
+% mds:things_to_do
+
+
+% Physical nodes
+\phynodex{meter}{0,0}{mds:electric_meter}{label={above:\tiny{power grid}}};
+
+
+\controlnodedx{cc}{1.5,0}{mds:memory}{mds:ev_charger}{label={}};
+
+
+% Device nodes
+\devicenodex{dev1}{2.5,-1}{mds:electric_car}{label={}};
+
+\dnodex{d1}{2.5,-2}{};
+\dnodex{d2}{5,-2}{};
+
+
+\CPESdashed
+\devicenodex{bat}{6,-1}{mds:electric_car}{label={}};
+\devicenodex{pv}{4,-1}{mds:solar_power}{label={}};
+\devicenodex{inverter}{5,-1}{mds:ev_charger}{label={}};
+
+\draw [->, clink] (cc.east) -| (inverter.north);
+
+\draw [->, dlink] (pv.east) -- (inverter.west);
+\draw [<->, dlink] (bat.west) -- (inverter.east);
+\draw [<->, dlink] (inverter.south) -- (d2.north);
+\CPESsolid
+
+
+
+
+%
+% % Device links
+\draw [<->, dlink] (dev1.south) -- (d1.north);
+
+
+\draw [<->, dlink] (d1.west) -| (meter.south);
+\draw [<->, dlink] (d1.east) -- (d2.west);
+
+% % Control links
+\draw [->, clinku] (meter.east) -- (cc.west);
+
+\draw [->, clink] (cc.east) -| (dev1.north);
+
+\cpesstylelight
+\devicenodex{dev2}{7.5,-1}{mds:electric_car}{label={}};
+\draw [->, dlink] (d2.east) -| (dev2.south);
+\cpesstyle
+
+\end{tikzpicture}
