@@ -62,13 +62,13 @@
 
 
 % Physical nodes
-\phynodex{meter}{0,1}{mds:electric_meter}{label={above:\tiny{power grid}}};
+\phynodex{meter}{0,1}{mds:electric_meter}{label={above:\tiny{grid connection}}};
 
 
 % Device nodes
-\devicenodex{pv}{1,-1.5}{mds:solar_power}{label={}};
-\devicenodex{evse}{2.5,0}{mds:ev_charger}{label={}};
-\devicenodex{ev}{2.5,-1.5}{mds:electric_car}{label={}};
+\devicenodex{pv}{1,-1.5}{mds:solar_power}{label={below:\tiny{PV}}};
+\devicenodex{evse}{2.5,0}{mds:ev_charger}{label={above:\tiny{EVSE}}};
+\devicenodex{ev}{2.5,-1.5}{mds:electric_car}{label={45:\tiny{EV}}};
 
 
 \dnodex{d0}{1,0}{};
@@ -80,9 +80,9 @@
 
 
 % Interaction nodes
-\interactnodex{cpo}{5.5,0}{mds:domain}{label={}};
-\interactnodex{user}{6.5,-2.25}{mds:person}{label={}};
-\interactnodedx{market}{5.5,-1.5}{mds:gavel}{mds:euro}{label={}};
+\interactnodex{cpo}{5.5,0}{mds:domain}{label={above:\tiny{CPO}}};
+\interactnodex{user}{6.5,-2.25}{mds:person}{label={45:\tiny{user}}};
+\interactnodex{market}{5.5,-1.5}{mds:finance}{label={above:\tiny{energy market}}};
 
 
 
@@ -102,8 +102,8 @@
 % Interaction links
 \draw [->, ilink] (cpo.west) -- (cc.east);
 \draw [->, ilinku] (market.west) -- (evc.east);
-\draw [->, ilink] (user.north) |- (cpo.east);
-\draw [->, ilink] (user.west) -| (ev.south);
+\draw [->, ilinku] (user.north) |- (cpo.east);
+\draw [->, ilinku] (user.west) -| (ev.south);
 
 
 

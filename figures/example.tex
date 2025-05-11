@@ -64,18 +64,19 @@
 % Physical nodes
 \phynodex{grid}{0,0}{mds:grid_on}{label={above:\tiny{power grid}}};
 \phynodex{transformer}{0,-1.5}{mds:join}{label={}};
-\phynodex{meter0}{1,-3}{mds:electric_meter}{label={above:\tiny{smart meter}}};
-\phynodex{meter1}{1,-4.5}{mds:electric_meter}{label={}};
+\phynodex{meter0}{1,-3}{mds:electric_meter}{label={above:\tiny{connection house 1}}};
+\phynodex{meter1}{1,-4.5}{mds:electric_meter}{label={above:\tiny{connection house 2}}};
 
 \pnodex{grid_junction}{0,-3}{};
+\pnodex{grid_junction2}{0,-4.5}{};
 
 
 % Device nodes
-\devicenodex{bat}{3.5,-1.5}{mds:battery_android_4}{label={}};
-\devicenodex{pv}{3.5,-3}{mds:solar_power}{label={}};
-\devicenodex{wm}{3.5,-4.5}{mds:local_laundry_service}{label={}};
+\devicenodex{bat}{3.5,-1.5}{mds:battery_android_4}{label={above:\tiny{battery}}};
+\devicenodex{pv}{3.5,-3}{mds:solar_power}{label={above:\tiny{PV}}};
+\devicenodex{wm}{3.5,-4.5}{mds:local_laundry_service}{label={above:\tiny{manual washing machine}}};
 \devicenodex{ev}{3.5,-6}{mds:electric_car}{label={}};
-\devicenodex{evse}{2,-6}{mds:ev_charger}{label={left:\tiny{EV+charger}}};
+\devicenodex{evse}{2,-6}{mds:ev_charger}{label={180:\tiny{EV+charger}}};
 
 
 \dnodex{d0}{2,-3}{};
@@ -85,27 +86,29 @@
 
 
 % Control nodes
-\controlnodedx{dsoc}{5,0}{mds:memory}{mds:join}{label={}};
-\controlnodedx{batc}{5,-1.5}{mds:memory}{mds:battery_android_4}{label={}};
+\controlnodedx{dsoc}{5,0}{mds:memory}{mds:grid_on}{label={above:\tiny{grid control}}};
+\controlnodedx{batc}{5,-1.5}{mds:memory}{mds:battery_android_4}{label={above:\tiny{battery controller}}};
 \controlnodedx{pvc}{5,-3}{mds:memory}{mds:solar_power}{label={}};
-\controlnodedx{evc}{5,-6}{mds:memory}{mds:electric_car}{label={}};
+\controlnodedx{evc}{5,-6}{mds:robot_2}{mds:electric_car}{label={above:\tiny{EV agent}}};
 
-\controlnodedx{hems0}{7,-2.25}{mds:network_intelligence}{mds:house}{label={}};
-\controlnodedx{hems1}{7,-5.25}{mds:network_intelligence}{mds:house}{label={}};
+\controlnodedx{hems0}{7,-2.25}{mds:network_intelligence}{mds:house}{label={0:\tiny{HEMS 1}}};
+\controlnodedx{hems1}{7,-5.25}{mds:network_intelligence}{mds:house}{label={45:\tiny{HEMS 2}}};
 
-\controlnodedx{comm}{8,-3.75}{mds:network_intelligence}{mds:communities}{label={}};
+\controlnodedx{comm}{8.2,-3.95}{mds:network_intelligence}{mds:house}{label={}};
+\controlnodedx{comm}{8.1,-3.85}{mds:network_intelligence}{mds:house}{label={}};
+\controlnodedx{comm}{8,-3.75}{mds:network_intelligence}{mds:house}{label={45:\tiny{HEMSs}}};
 
 \cnodex{c0}{6,-2.25}{};
 \cnodex{c1}{7,-3.75}{};
 
 % Interaction nodes
-\interactnodex{dso}{10,0}{mds:domain}{label={}};
-\interactnodex{p0}{10,-1.5}{mds:person}{label={}};
-\interactnodex{p1}{10,-4.5}{mds:person}{label={}};
-\interactnodedx{market}{10,-7}{mds:gavel}{mds:euro}{label={}};
+\interactnodex{dso}{10,0}{mds:domain}{label={above:\tiny{distribution service operator}}};
+\interactnodex{p0}{10,-1.5}{mds:person}{label={-45:\tiny{user 2}}};
+\interactnodex{p1}{10,-4.5}{mds:person}{label={-45:\tiny{user 2}}};
+\interactnodex{market}{10,-7}{mds:finance}{label={above:\tiny{energy market}}};
 
-\interactnodex{govt}{11.5,-0.75}{mds:things_to_do}{label={}};
-\interactnodex{coop}{11.5,-3}{mds:groups}{label={}};
+\interactnodex{govt}{11.5,-0.75}{mds:account_balance}{label={-45:\tiny{government}}};
+\interactnodex{coop}{11.5,-3}{mds:groups}{label={-45:\tiny{energy cooporation}}};
 
 \inodex{i0}{10,-3}{};
 
@@ -114,7 +117,8 @@
 \draw [plink] (grid.south) -- (transformer.north);
 \draw [plink] (transformer.south) -- (grid_junction.north);
 \draw [plink] (grid_junction.east) -- (meter0.west);
-\draw [plink] (grid_junction.south) |- (meter1.west);
+\draw [plink] (grid_junction.south) -- (grid_junction2.north);
+\draw [plink] (grid_junction2.east) -- (meter1.west);
 
 
 % Device links
@@ -166,103 +170,12 @@
 \draw [->, ilinku] (coop.south) |- (comm.east);
 
 
-%
-% % Example to have relative node positions
-% % \controlnode{hc2}{}{mds:house}{label={-135:\tiny{HEM2S}}};
-% % \controlnode{hc3}{right= 1cm of hc2}{mds:house}{label={-135:\tiny{HEM3S}}};
-%
-% \node (f1) at (0.75, -0.5) {};
-% \node (f2) at (0.75, -1.5) {};
-% \node (f3) at (0.75, -7.5) {};
-% \node (f4) at (0.75, -8.5) {};
-%
-% \controlnodedx{c1}{3.5,0}{mds:memory}{mds:lightbulb}{label=above:\tiny{unc. ctrl}};
-% \controlnodedx{c2}{3.5,-1.5}{mds:memory}{mds:local_laundry_service}{label=above:\tiny{ts. ctrl}};
-% \controlnodedx{c3}{3.5,-3}{mds:memory}{mds:dishwasher_gen}{label=above:\tiny{ts. ctrl}};
-% \controlnodedx{c4}{3.5,-4.5}{mds:memory}{mds:electric_car}{label=above:\tiny{bts. ctrl}};
-% \controlnodedx{c5}{3.5,-6}{mds:memory}{mds:heat_pump}{label=above:\tiny{buf.conv. ctrl}};
-% \controlnodedx{c6}{3.5,-7.5}{mds:memory}{mds:battery_3_bar}{label=above:\tiny{buf. ctrl}};
-% \controlnodedx{c7}{3.5,-9}{mds:memory}{mds:solar_power}{label=above:\tiny{curt. ctrl}};
-%
-%
-% % Device nodes
-% \devicenodex{d1}{5.5,0}{mds:lightbulb}{label=above:\tiny{uncontrollable load}};
-% \devicenodex{d2}{5.5,-1.5}{mds:local_laundry_service}{label=above:\tiny{washing machine}};
-% \devicenodex{d3}{5.5,-3}{mds:dishwasher_gen}{label=above:\tiny{dishwasher}};
-% \devicenodex{d4}{5.5,-4.5}{mds:electric_car}{label=above:\tiny{BEV/PHEV}};
-% \devicenodex{d5}{5.5,-6}{mds:heat_pump}{label=above:\tiny{heat pump}};
-% \devicenodex{d6}{5.5,-7.5}{mds:battery_3_bar}{label=above:\tiny{battery}};
-% \devicenodex{d7}{5.5,-9}{mds:solar_power}{label=above:\tiny{PV}};
-%
-% % Small device nodes for links
-% \dnodex{e2}{7, -1.5}{};
-% \dnodex{e3}{7, -3}{};
-% \dnodex{e4}{7, -4.5}{};
-% \dnodex{e5}{7, -6}{};
-% \dnodex{e6}{7, -7.5}{};
-%
-%
-% % Physical infrastructure (Grid)
-% \phynodex{poc}{8.25,-4.5}{mds:electric_meter}{label=above:\tiny{grid conn.}};
-%
-% % Adding small nodes (circles)
-% \node (g1) at (9.25, -0.5) {};
-% \pnodex{g2}{9.25, -1.5}{};
-% \pnodex{g3}{9.25, -4.5}{};
-% \pnodex{g4}{9.25, -7.5}{};
-% \node (g5) at (9.25, -8.5) {};
-%
-% % For interaction, use "interactionnode" (interactionnodex and interactionnodedx respectively)
-% % For small interaction nodes, use "inode"
-%
-% % Links
-% % Control
-% \draw [->, clink] (fc.east) -- (hc.west);
-% \draw [clink] (fc.east) -| (f2.south);
-% \draw [clink] (fc.east) -| (f3.north);
-% \draw [clink, dashed] (f2.south) -- (f1.north);
-% \draw [clink, dashed] (f3.north) -- (f4.south);
-%
-% \draw [<-, clink] (c1.west) -| (hc.north);
-% \draw [<-, clink] (c2.west) -| (hc.north);
-% \draw [<-, clink] (c3.west) -| (hc.north);
-% \draw [<-, clink] (c4.west) -- (hc.east);
-% \draw [<-, clink] (c5.west) -| (hc.south);
-% \draw [<-, clink] (c6.west) -| (hc.south);
-% \draw [<-, clink] (c7.west) -| (hc.south);
-%
-% \draw [->, clink] (c1.east) -- (d1.west);
-% \draw [->, clink] (c2.east) -- (d2.west);
-% \draw [->, clink] (c3.east) -- (d3.west);
-% \draw [->, clink] (c4.east) -- (d4.west);
-% \draw [->, clink] (c5.east) -- (d5.west);
-% \draw [->, clink] (c6.east) -- (d6.west);
-% \draw [->, clink] (c7.east) -- (d7.west);
-%
-% % Stream links
-% \draw [<-, dlink] (d1.east) -| (e2.north);
-% \draw [<-, dlink] (d2.east) -- (e2.west);
-% \draw [<-, dlink] (d3.east) -- (e3.west);
-% \draw [<-, dlink] (d4.east) -- (e4.west);
-% \draw [<-, dlink] (d5.east) -- (e5.west);
-% \draw [<->, dlink] (d6.east) -- (e6.west);
-% \draw [->, dlink] (d7.east) -| (e6.south);
-%
-% \draw [<-, dlink] (e2.south) -- (e3.north);
-% \draw [<-, dlink] (e3.south) -- (e4.north);
-% \draw [<->, dlink] (e4.south) -- (e5.north);
-% \draw [<->, dlink] (e5.south) -- (e6.north);
-%
-%
-% \draw [<->, dlink] (e4.east) -- (poc.west);
-%
-% % Physical links
-% \draw [plink] (poc.east) -- (g3.west);
-% \draw [plink, dashed] (g5.north) -- (g4.south);
-% \draw [plink] (g4.north) -- (g3.south);
-% \draw [plink] (g3.north) -- (g2.south);
-% \draw [plink, dashed] (g2.north) -- (g1.south);
 
-% Likewise use "ilink" for interaction
+
+\cpesstylelight
+\phynodex{meter2}{1.2,-7.2}{mds:electric_meter}{label={}};
+\phynodex{meter2}{1.1,-7.1}{mds:electric_meter}{label={}};
+\phynodex{meter2}{1,-7}{mds:electric_meter}{label={-135:\tiny{other houses}}};
+\draw [plink] (grid_junction2.south) |- (meter2.west);
 
 \end{tikzpicture}

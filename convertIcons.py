@@ -125,7 +125,7 @@ for iconname in subfolders:
         shutil.copy(filename, outdir+"/svg/plain/mds:"+iconname+".svg")
 
         # Convert to pdf
-        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mds:"+iconname+".pdf")
+        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mds_"+iconname+".pdf")
 
 
 
@@ -143,7 +143,7 @@ for iconname in subfolders:
         shutil.copy(filename, outdir+"/svg/fill/mds:"+iconname+".svg")
 
         # Convert to pdf
-        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mds:"+iconname+".pdf")
+        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mds_"+iconname+".pdf")
 
 
 
@@ -169,7 +169,7 @@ for iconname in subfolders:
         shutil.copy(filename, outdir+"/svg/plain/mdi:"+iconname+".svg")
 
         # Convert to pdf
-        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mdi:"+iconname+".pdf")
+        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mdi_"+iconname+".pdf")
 
 
 
@@ -184,4 +184,4 @@ for iconname in subfolders:
         shutil.copy(filename, outdir+"/svg/fill/mdi:"+iconname+".svg")
 
         # Convert to pdf
-        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mdi:"+iconname+".pdf")
+        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mdi_"+iconname+".pdf")

@@ -62,14 +62,13 @@
 
 
 % Physical nodes
-\phynodex{grid}{0,0}{mds:join}{label={}};
-
+\phynodex{grid}{0,0}{mds:join}{label={above:\tiny{transformer}}};
 
 % Control nodes
-\controlnodedx{gs}{1.5,0}{mds:memory}{mds:ev_charger}{label={}};
+\controlnodedx{gs}{1.5,0}{mds:memory}{mds:ev_charger}{label={above:\tiny{GridShield sender}}};
 \controlnodedx{c0}{4.2,-0.2}{mds:memory}{mds:ev_charger}{label={}};
 \controlnodedx{c1}{4.1,-0.1}{mds:memory}{mds:ev_charger}{label={}};
-\controlnodedx{c2}{4,0}{mds:memory}{mds:ev_charger}{label={}};
+\controlnodedx{c2}{4,0}{mds:memory}{mds:ev_charger}{label={above:\tiny{GridShield receivers}}};
 
 \draw [->, clinku] (gs.east) -- (c2.west);
 \draw [->, clinku] (grid.east) -- (gs.west);
@@ -82,7 +81,7 @@
 \devicenodex{ev1}{5.6,-0.1}{mds:ev_charger}{label={}};
 \draw [->, clinku] (c1.east) -- (ev1.west);
 
-\devicenodex{ev2}{5.5,0}{mds:ev_charger}{label={}};
+\devicenodex{ev2}{5.5,0}{mds:ev_charger}{label={above:\tiny{EV chargers}}};
 \draw [->, clinku] (c2.east) -- (ev2.west);
 
 
