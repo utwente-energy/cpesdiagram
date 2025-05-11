@@ -72,7 +72,9 @@
 
 
 % Device nodes
+\CPESdashed
 \devicenodex{bat}{3.5,-1.5}{mds:battery_android_4}{label={above:\tiny{battery}}};
+\CPESsolid
 \devicenodex{pv}{3.5,-3}{mds:solar_power}{label={above:\tiny{PV}}};
 \devicenodex{wm}{3.5,-4.5}{mds:local_laundry_service}{label={above:\tiny{manual washing machine}}};
 \devicenodex{ev}{3.5,-6}{mds:electric_car}{label={}};
@@ -87,8 +89,10 @@
 
 % Control nodes
 \controlnodedx{dsoc}{5,0}{mds:memory}{mds:grid_on}{label={above:\tiny{grid control}}};
+\CPESdashed
 \controlnodedx{batc}{5,-1.5}{mds:memory}{mds:battery_android_4}{label={above:\tiny{battery controller}}};
-\controlnodedx{pvc}{5,-3}{mds:memory}{mds:solar_power}{label={}};
+\CPESsolid
+\controlnodedx{pvc}{5,-3}{mds:memory}{mds:solar_power}{label={-45:\tiny{PV controller}}};
 \controlnodedx{evc}{5,-6}{mds:robot_2}{mds:electric_car}{label={above:\tiny{EV agent}}};
 
 \controlnodedx{hems0}{7,-2.25}{mds:network_intelligence}{mds:house}{label={0:\tiny{HEMS 1}}};
@@ -123,7 +127,9 @@
 
 % Device links
 \draw [<->, dlink] (meter0.east) -- (d0.west);
+\CPESdashed
 \draw [<->, dlink] (d0.north) |- (bat.west);
+\CPESsolid
 \draw [<-, dlink] (d0.east) -- (pv.west);
 
 \draw [->, dlink] (meter1.east) -- (d1.west);
@@ -135,11 +141,15 @@
 % Control links
 \draw [->, clinku] (dsoc.west) -- (grid.east);
 
+\CPESdashed
 \draw [->, clink] (batc.west) -- (bat.east);
+\CPESsolid
 \draw [->, clink] (pvc.west) -- (pv.east);
 \draw [->, clinku] (evc.west) -- (ev.east);
 
+\CPESdashed
 \draw [->, clink] (c0.north) |- (batc.east);
+\CPESsolid
 \draw [->, clink] (c0.south) |- (pvc.east);
 \draw [clink] (hems0.west) -- (c0.east);
 
