@@ -65,10 +65,10 @@
 \phynodex{grid}{0,0}{mds:join}{label={above:\tiny{transformer}}};
 
 % Control nodes
-\controlnodedx{gs}{1.5,0}{mds:memory}{mds:ev_charger}{label={above:\tiny{GridShield sender}}};
-\controlnodedx{c0}{4.2,-0.2}{mds:memory}{mds:ev_charger}{label={}};
-\controlnodedx{c1}{4.1,-0.1}{mds:memory}{mds:ev_charger}{label={}};
-\controlnodedx{c2}{4,0}{mds:memory}{mds:ev_charger}{label={above:\tiny{GridShield receivers}}};
+\controlnodedx{gs}{1.5,0}{mds:memory}{mds:cell_tower}{label={above:\tiny{GridShield sender}}};
+\controlnodedx{c0}{4.2,-0.2}{mds:memory}{mds:router}{label={}};
+\controlnodedx{c1}{4.1,-0.1}{mds:memory}{mds:router}{label={}};
+\controlnodedx{c2}{4,0}{mds:memory}{mds:router}{label={above:\tiny{GridShield receivers}}};
 
 \draw [->, clinku] (gs.east) -- (c2.west);
 \draw [->, clinku] (grid.east) -- (gs.west);

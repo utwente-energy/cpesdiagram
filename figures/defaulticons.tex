@@ -1,0 +1,145 @@
+% Copyright 2025 University of Twente
+%
+% Licensed under the Apache License, Version 2.0 (the "License");
+% you may not use this file except in compliance with the License.
+% You may obtain a copy of the License at
+%
+%     http://www.apache.org/licenses/LICENSE-2.0
+%
+% Unless required by applicable law or agreed to in writing, software
+% distributed under the License is distributed on an "AS IS" BASIS,
+% WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+% See the License for the specific language governing permissions and
+% limitations under the License.
+
+\input{cpesdiag/cpesdiag.tex}
+\cpesstyle
+
+% use the following style instead to have the diagram in grayscale
+% \cpesstylegrey
+
+% use the following style instead to have the diagram in light grey colours
+% \cpesstylelight
+
+% use the following command to have a dashed line
+% \CPESdashed
+% and restore using
+% \CPESsolid
+
+% These commands can be used in the figure to switch between styles
+
+\begin{tikzpicture}
+% PHY:
+% mds:grid_on
+% mds:join
+% mds:electric_meter
+% mds:electric_meter
+%
+%
+% DEV
+% mds:battery_full
+% mds:solar_power
+% mds:local_laundry_service
+% mds:ev_charger
+% mds:electric_car
+%
+%
+% CYBER
+% mds:memory
+% mds:network_intelligence
+%
+% mds:house
+% mds:communities
+%
+%
+% INTERACT
+% mds:person
+% mds:groups
+% mds:euro
+% mds:gavel
+% mds:domain
+% mds:things_to_do
+
+\cpesstylegray
+\renewcommand\CPESColourPhy{white}
+% Physical nodes
+\phynodex{grid}{0,0}{mds:join}{label={above:\tiny{Transformer}}};
+\node [label={below:\tiny{mds\_join}}] at (0,-0.1) {};
+% \node [label={below:\tiny{power grid3}}] at (0,-0.3) {};
+
+\phynodex{grid}{1.5,0}{mds:electric_meter}{label={above:\tiny{Smart Meter}}};
+\node [label={below:\tiny{mds\_electric\_meter}}] at (1.5,-0.1) {};
+% % \node [label={below:\tiny{power grid3}}] at (1.25,-0.3) {};
+
+\phynodex{grid}{3,0}{mds:memory}{label={above:\tiny{Controler}}};
+\node [label={below:\tiny{mds\_memory}}] at (3,-0.1) {};
+% \node [label={below:\tiny{power grid3}}] at (2.5,-0.3) {};
+
+\phynodex{grid}{4.5,0}{mds:person}{label={above:\tiny{User}}};
+\node [label={below:\tiny{mds\_person}}] at (4.5,-0.1) {};
+% \node [label={below:\tiny{power grid3}}] at (5,-0.3) {};
+
+\phynodex{grid}{6,0}{mds:domain}{label={above:\tiny{Company}}};
+\node [label={below:\tiny{mds\_domain}}] at (6,-0.1) {};
+% \node [label={below:\tiny{power grid3}}] at (6.25,-0.3) {};
+
+\phynodex{grid}{7.5,0}{mds:finance}{label={above:\tiny{Market}}};
+\node [label={below:\tiny{mds\_finance}}] at (7.5,-0.1) {};
+% \node [label={below:\tiny{power grid3}}] at (7.5,-0.3) {};
+
+
+
+% % Line 2
+\phynodedx{grid}{0,-1.8}{mds:download_2}{mds:lightbulb}{label={above:\tiny{Uncontrollable}}};
+\node [label={below:\tiny{mds\_download\_2}}] at (0,-1.9) {};
+\node [label={below:\tiny{mds\_lightbulb}}] at (0,-2.1) {};
+%
+\phynodedx{grid}{1.5,-1.8}{mds:download_2}{mds:expand}{label={above:\tiny{Curtailable}}};
+\node [label={below:\tiny{mds\_download\_2}}] at (1.5,-1.9) {};
+\node [label={below:\tiny{mds\_expand}}] at (1.5,-2.1) {};
+%
+\phynodedx{grid}{3,-1.8}{mds:download_2}{mds:update}{label={above:\tiny{TimeShiftable}}};
+\node [label={below:\tiny{mds\_download\_2}}] at (3,-1.9) {};
+\node [label={below:\tiny{mds\_update}}] at (3,-2.1) {};
+
+\phynodex{grid}{4.5,-1.8}{mds:battery_full}{label={above:\tiny{Buffer}}};
+\node [label={below:\tiny{mds\_battery\_full}}] at (4.5,-1.9) {};
+
+\phynodedx{grid}{6,-1.8}{mds:battery_full}{mds:update}{label={above:\tiny{BufferTimeShift.}}};
+\node [label={below:\tiny{mds\_battery\_full}}] at (6,-1.9) {};
+\node [label={below:\tiny{mds\_update}}] at (6,-2.1) {};
+
+\phynodedx{grid}{7.5,-1.8}{mds:battery_full}{mds:sync}{label={above:\tiny{BufferConv.}}};
+\node [label={below:\tiny{mds\_battery\_full}}] at (7.5,-1.9) {};
+\node [label={below:\tiny{mds\_sync}}] at (7.5,-2.1) {};
+
+
+% % % Line 3
+\phynodex{grid}{0,-3.6}{mds:sync_alt}{label={above:\tiny{Exchanger}}};
+\node [label={below:\tiny{mds\_sync\_alt}}] at (0,-3.7) {};
+% \node [label={below:\tiny{power grid3}}] at (0,-3.9) {};
+
+
+\phynodedx{grid}{1.5,-3.6}{mds:download_2}{mds:expand}{label={above:\tiny{S2-PEBC}}};
+\node [label={below:\tiny{mds\_download\_2}}] at (1.5,-3.7) {};
+\node [label={below:\tiny{mds\_expand}}] at (1.5,-3.9) {};
+%
+\phynodedx{grid}{3,-3.6}{mds:download_2}{mds:update}{label={above:\tiny{S2-PPBC}}};
+\node [label={below:\tiny{mds\_download\_2}}] at (3,-3.7) {};
+\node [label={below:\tiny{mds\_update}}] at (33,-3.9) {};
+
+\phynodex{grid}{4.5,-3.6}{mds:charger}{label={above:\tiny{S2-OMBC}}};
+\node [label={below:\tiny{mds\_charger}}] at (4.5,-3.7) {};
+% \node [label={below:\tiny{power grid3}}] at (4.5,-3.9) {};
+
+\phynodex{grid}{6,-3.6}{mds:battery_full}{label={above:\tiny{S2-FLBC}}};
+\node [label={below:\tiny{mds\_battery\_full}}] at (6,-3.7) {};
+% \node [label={below:\tiny{power grid3}}] at (6,-3.9) {};
+
+\phynodedx{grid}{7.5,-3.6}{mds:call_merge}{mds:sync}{label={above:\tiny{S2-DDBC}}};
+\node [label={below:\tiny{mds\_call\_merge}}] at (7.5,-3.7) {};
+\node [label={below:\tiny{mds\_sync}}] at (7.5,-3.9) {};
+
+\renewcommand\CPESColourPhy{black}
+
+\end{tikzpicture}
