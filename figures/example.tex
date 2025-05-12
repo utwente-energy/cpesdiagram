@@ -181,11 +181,53 @@
 
 
 
-
+% The light house nodes in the bottom left
 \cpesstylelight
 \phynodex{meter2}{1.2,-7.2}{mds:electric_meter}{label={}};
 \phynodex{meter2}{1.1,-7.1}{mds:electric_meter}{label={}};
 \phynodex{meter2}{1,-7}{mds:electric_meter}{label={-135:\tiny{other houses}}};
 \draw [plink] (grid_junction2.south) |- (meter2.west);
+
+\cpesstyle
+
+% Legend
+\draw [style=rectangle, fill=black!5, dashed] (13.75, 1) rectangle (17.25,-8);
+\node (legend) at (15.5, 0.5) {\small{Legend}};
+
+\phynodex{l1}{14.5,-0.5}{mds:circle}{label={above:\tiny{physical}}};
+\pnodex{ln1}{16.5,-0.5}{label={above:\tiny{joint hub}}};
+\draw [plink] (l1.east) -- (ln1.west) node [above,align=center,midway, label=below:\tiny{cable}] {};
+
+\devicenodex{l2}{14.5,-2}{mds:square}{label={above:\tiny{device}}};
+\dnodex{ln2}{16.5,-2}{label={above:\tiny{pool hub}}};
+\draw [<->, dlink] (l2.east) -- (ln2.west) node [above,align=center,midway, label=below:\tiny{stream}] {};
+
+\controlnodex{l3}{14.5,-3.5}{mds:hexagon}{label={above:\tiny{cyber}}};
+\cnodex{ln31}{16.5,-3.5}{label={above:\tiny{network hub}}};
+\cnodex{ln32}{16.5,-4.25}{};
+\cnodex{ln33}{16.5,-4.75}{};
+\cnodex{ln34}{14.5,-4.25}{};
+\cnodex{ln35}{14.5,-4.75}{};
+
+\draw [clink] (l3.east) -- (ln31.west) node [above,align=center,midway, label=below:\tiny{2-way comms}] {};
+\draw [<-, clink] (ln34.east) -- (ln32.west) node [above,align=center,midway, label=below:\tiny{2-way hierarchical}] {};
+\draw [<-, clinku] (ln35.east) -- (ln33.west) node [above,align=center,midway, label=below:\tiny{1-way command}] {};
+
+%
+\interactnodex{l4}{14.5,-6.25}{mds:thermostat_carbon}{label={above:\tiny{interaction}}};
+\inodex{ln41}{16.5,-6.25}{label={above:\tiny{forum hub}}};
+\inodex{ln42}{16.5,-7}{};
+\inodex{ln43}{14.5,-7}{};
+\inodex{ln44}{16.5,-7.5}{};
+\inodex{ln45}{14.5,-7.5}{};
+
+\draw [<-, ilink] (l4.east) -- (ln41.west) node [above,align=center,midway, label=below:\tiny{2-way interaction}] {};
+\draw [<-, ilink] (ln43.east) -- (ln42.west) node [above,align=center,midway, label=below:\tiny{2-way hierarchical}] {};
+\draw [<-, ilinku] (ln45.east) -- (ln44.west) node [above,align=center,midway, label=below:\tiny{1-way instruction}] {};
+
+% \draw [flink] (f1.east) -- (f2.west) node [above,align=center,midway, label=below:\tiny{cable}] {};
+% \draw [<->, dlink] (d1.east) -- (d2.west) node [above,align=center,midway, label=below:\tiny{stream}] {};
+% \draw [clink] (c1.east) -- (c2.west) node [above,align=center,midway, label=below:\tiny{2-way ICT}] {};
+% \draw [<-, clinku] (c2.east) -- (c3.west) node [above,align=center,midway, label=below:\tiny{1-way ICT}] {};
 
 \end{tikzpicture}
