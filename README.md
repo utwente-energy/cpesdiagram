@@ -31,6 +31,7 @@ Please follow the following steps using the commandline from the root directory 
     git clone https://github.com/Templarian/MaterialDesign
     python convertIcons.py
 
+Note that Windows and Mac OS may require additional steps to make this Cairo SVG2PDFconverter work, so please read the CairoSVG documentation carefully. A Docker container to produce the pdf files is envisioned in future updates.
 
 ## Usage
 To be written later. For now please refer to the provided examples, together with the following brief description.

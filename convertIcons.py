@@ -109,7 +109,7 @@ os.makedirs(outdir+"/svg/fill", exist_ok = True)
 subfolders= os.listdir(indirmds)
 for iconname in subfolders:
     if not '_stroke.svg' in iconname:
-        print("processing mds:"+iconname)
+        print("processing mds_"+iconname)
 
         # First process the plain icon
 
@@ -122,7 +122,7 @@ for iconname in subfolders:
             filename = add_stroke(filename, stroke)
 
         # Store the SVG version for easy use with e.g. Draw.io
-        shutil.copy(filename, outdir+"/svg/plain/mds:"+iconname+".svg")
+        shutil.copy(filename, outdir+"/svg/plain/mds_"+iconname+".svg")
 
         # Convert to pdf
         cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mds_"+iconname+".pdf")
@@ -140,7 +140,7 @@ for iconname in subfolders:
             filename = add_stroke(filename, stroke_fill)
 
         # Store the SVG version for easy use with e.g. Draw.io
-        shutil.copy(filename, outdir+"/svg/fill/mds:"+iconname+".svg")
+        shutil.copy(filename, outdir+"/svg/fill/mds_"+iconname+".svg")
 
         # Convert to pdf
         cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mds_"+iconname+".pdf")
@@ -154,7 +154,7 @@ for iconname in subfolders:
 subfolders= os.listdir(indirmdi)
 for iconname in subfolders:
     if not '_stroke.svg' in iconname:
-        print("processing mdi:"+iconname)
+        print("processing mdi_"+iconname)
 
         # Process the plain variant
 
@@ -166,7 +166,7 @@ for iconname in subfolders:
             filename = add_stroke(filename, stroke)
 
         # Store the SVG version for easy use with e.g. Draw.io
-        shutil.copy(filename, outdir+"/svg/plain/mdi:"+iconname+".svg")
+        shutil.copy(filename, outdir+"/svg/plain/mdi_"+iconname+".svg")
 
         # Convert to pdf
         cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mdi_"+iconname+".pdf")
@@ -181,7 +181,7 @@ for iconname in subfolders:
             filename = add_stroke(filename, stroke_fill)
 
         # Store the SVG version for easy use with e.g. Draw.io
-        shutil.copy(filename, outdir+"/svg/fill/mdi:"+iconname+".svg")
+        shutil.copy(filename, outdir+"/svg/fill/mdi_"+iconname+".svg")
 
         # Convert to pdf
         cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mdi_"+iconname+".pdf")

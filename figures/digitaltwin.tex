@@ -30,55 +30,55 @@
 
 \begin{tikzpicture} 
 % PHY:
-% mds:grid_on
-% mds:join
-% mds:electric_meter
-% mds:electric_meter
+% mds_grid_on
+% mds_join
+% mds_electric_meter
+% mds_electric_meter
 %
 %
 % DEV
-% mds:battery_android_4
-% mds:solar_power
-% mds:local_laundry_service
-% mds:ev_charger
-% mds:electric_car
+% mds_battery_android_4
+% mds_solar_power
+% mds_local_laundry_service
+% mds_ev_charger
+% mds_electric_car
 %
 %
 % CYBER
-% mds:memory
-% mds:network_intelligence
+% mds_memory
+% mds_network_intelligence
 %
-% mds:house
-% mds:communities
+% mds_house
+% mds_communities
 %
 %
 % INTERACT
-% mds:person
-% mds:groups
-% mds:euro
-% mds:gavel
-% mds:domain
-% mds:things_to_do
+% mds_person
+% mds_groups
+% mds_euro
+% mds_gavel
+% mds_domain
+% mds_things_to_do
 
 
 % Physical nodes
-\phynodex{meter}{0,0}{mds:electric_meter}{label={above:\tiny{grid connection}}};
+\phynodex{meter}{0,0}{mds_electric_meter}{label={above:\tiny{grid connection}}};
 
 
-\controlnodedx{cc}{1.5,0}{mds:memory}{mds:flowchart}{label={above:\tiny{controller}}};
+\controlnodedx{cc}{1.5,0}{mds_memory}{mds_flowchart}{label={above:\tiny{controller}}};
 
 
 % Device nodes
-\devicenodex{dev1}{2.5,-1}{mds:electric_car}{label={}};
+\devicenodex{dev1}{2.5,-1}{mds_electric_car}{label={}};
 
 \dnodex{d1}{2.5,-2}{};
 \dnodex{d2}{5,-2}{};
 
 
 \CPESdashed
-\devicenodex{bat}{6,-1}{mds:battery_android_4}{label={above:\tiny{battery}}};
-\devicenodex{pv}{4,-1}{mds:solar_power}{label={above:\tiny{pv}}};
-\devicenodex{inverter}{5,-1}{mds:legend_toggle}{};
+\devicenodex{bat}{6,-1}{mds_battery_android_4}{label={above:\tiny{battery}}};
+\devicenodex{pv}{4,-1}{mds_solar_power}{label={above:\tiny{pv}}};
+\devicenodex{inverter}{5,-1}{mds_legend_toggle}{};
 
 \draw [->, clink] (cc.east) -| (inverter.north);
 
@@ -104,7 +104,7 @@
 \draw [->, clink] (cc.east) -| (dev1.north);
 
 \cpesstylelight
-\devicenodex{dev2}{7.5,-1}{mds:heat_pump}{label={}};
+\devicenodex{dev2}{7.5,-1}{mds_heat_pump}{label={}};
 \draw [->, dlink] (d2.east) -| (dev2.south);
 \cpesstyle
 

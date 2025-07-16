@@ -30,113 +30,113 @@
 
 \begin{tikzpicture}
 % PHY:
-% mds:grid_on
-% mds:join
-% mds:electric_meter
-% mds:electric_meter
+% mds_grid_on
+% mds_join
+% mds_electric_meter
+% mds_electric_meter
 %
 %
 % DEV
-% mds:battery_full
-% mds:solar_power
-% mds:local_laundry_service
-% mds:ev_charger
-% mds:electric_car
+% mds_battery_full
+% mds_solar_power
+% mds_local_laundry_service
+% mds_ev_charger
+% mds_electric_car
 %
 %
 % CYBER
-% mds:memory
-% mds:network_intelligence
+% mds_memory
+% mds_network_intelligence
 %
-% mds:house
-% mds:communities
+% mds_house
+% mds_communities
 %
 %
 % INTERACT
-% mds:person
-% mds:groups
-% mds:euro
-% mds:gavel
-% mds:domain
-% mds:things_to_do
+% mds_person
+% mds_groups
+% mds_euro
+% mds_gavel
+% mds_domain
+% mds_things_to_do
 
 \cpesstylegray
 \renewcommand\CPESColourPhy{white}
 % Physical nodes
-\phynodex{grid}{0,0}{mds:join}{label={above:\tiny{Transformer}}};
+\phynodex{grid}{0,0}{mds_join}{label={above:\tiny{Transformer}}};
 \node [label={below:\tiny{mds\_join}}] at (0,-0.1) {};
 % \node [label={below:\tiny{power grid3}}] at (0,-0.3) {};
 
-\phynodex{grid}{1.5,0}{mds:electric_meter}{label={above:\tiny{Smart Meter}}};
+\phynodex{grid}{1.5,0}{mds_electric_meter}{label={above:\tiny{Smart Meter}}};
 \node [label={below:\tiny{mds\_electric\_meter}}] at (1.5,-0.1) {};
 % % \node [label={below:\tiny{power grid3}}] at (1.25,-0.3) {};
 
-\phynodex{grid}{3,0}{mds:memory}{label={above:\tiny{Controler}}};
+\phynodex{grid}{3,0}{mds_memory}{label={above:\tiny{Controler}}};
 \node [label={below:\tiny{mds\_memory}}] at (3,-0.1) {};
 % \node [label={below:\tiny{power grid3}}] at (2.5,-0.3) {};
 
-\phynodex{grid}{4.5,0}{mds:person}{label={above:\tiny{User}}};
+\phynodex{grid}{4.5,0}{mds_person}{label={above:\tiny{User}}};
 \node [label={below:\tiny{mds\_person}}] at (4.5,-0.1) {};
 % \node [label={below:\tiny{power grid3}}] at (5,-0.3) {};
 
-\phynodex{grid}{6,0}{mds:domain}{label={above:\tiny{Company}}};
+\phynodex{grid}{6,0}{mds_domain}{label={above:\tiny{Company}}};
 \node [label={below:\tiny{mds\_domain}}] at (6,-0.1) {};
 % \node [label={below:\tiny{power grid3}}] at (6.25,-0.3) {};
 
-\phynodex{grid}{7.5,0}{mds:finance}{label={above:\tiny{Market}}};
+\phynodex{grid}{7.5,0}{mds_finance}{label={above:\tiny{Market}}};
 \node [label={below:\tiny{mds\_finance}}] at (7.5,-0.1) {};
 % \node [label={below:\tiny{power grid3}}] at (7.5,-0.3) {};
 
 
 
 % % Line 2
-\phynodedx{grid}{0,-1.8}{mds:download_2}{mds:lightbulb}{label={above:\tiny{Uncontrollable}}};
+\phynodedx{grid}{0,-1.8}{mds_download_2}{mds_lightbulb}{label={above:\tiny{Uncontrollable}}};
 \node [label={below:\tiny{mds\_download\_2}}] at (0,-1.9) {};
 \node [label={below:\tiny{mds\_lightbulb}}] at (0,-2.1) {};
 %
-\phynodedx{grid}{1.5,-1.8}{mds:download_2}{mds:expand}{label={above:\tiny{Curtailable}}};
+\phynodedx{grid}{1.5,-1.8}{mds_download_2}{mds_expand}{label={above:\tiny{Curtailable}}};
 \node [label={below:\tiny{mds\_download\_2}}] at (1.5,-1.9) {};
 \node [label={below:\tiny{mds\_expand}}] at (1.5,-2.1) {};
 %
-\phynodedx{grid}{3,-1.8}{mds:download_2}{mds:update}{label={above:\tiny{TimeShiftable}}};
+\phynodedx{grid}{3,-1.8}{mds_download_2}{mds_update}{label={above:\tiny{TimeShiftable}}};
 \node [label={below:\tiny{mds\_download\_2}}] at (3,-1.9) {};
 \node [label={below:\tiny{mds\_update}}] at (3,-2.1) {};
 
-\phynodex{grid}{4.5,-1.8}{mds:battery_full}{label={above:\tiny{Buffer}}};
+\phynodex{grid}{4.5,-1.8}{mds_battery_full}{label={above:\tiny{Buffer}}};
 \node [label={below:\tiny{mds\_battery\_full}}] at (4.5,-1.9) {};
 
-\phynodedx{grid}{6,-1.8}{mds:battery_full}{mds:update}{label={above:\tiny{BufferTimeShift.}}};
+\phynodedx{grid}{6,-1.8}{mds_battery_full}{mds_update}{label={above:\tiny{BufferTimeShift.}}};
 \node [label={below:\tiny{mds\_battery\_full}}] at (6,-1.9) {};
 \node [label={below:\tiny{mds\_update}}] at (6,-2.1) {};
 
-\phynodedx{grid}{7.5,-1.8}{mds:battery_full}{mds:sync}{label={above:\tiny{BufferConv.}}};
+\phynodedx{grid}{7.5,-1.8}{mds_battery_full}{mds_sync}{label={above:\tiny{BufferConv.}}};
 \node [label={below:\tiny{mds\_battery\_full}}] at (7.5,-1.9) {};
 \node [label={below:\tiny{mds\_sync}}] at (7.5,-2.1) {};
 
 
 % % % Line 3
-\phynodex{grid}{0,-3.6}{mds:sync_alt}{label={above:\tiny{Exchanger}}};
+\phynodex{grid}{0,-3.6}{mds_sync_alt}{label={above:\tiny{Exchanger}}};
 \node [label={below:\tiny{mds\_sync\_alt}}] at (0,-3.7) {};
 % \node [label={below:\tiny{power grid3}}] at (0,-3.9) {};
 
 
-\phynodedx{grid}{1.5,-3.6}{mds:download_2}{mds:expand}{label={above:\tiny{S2-PEBC}}};
+\phynodedx{grid}{1.5,-3.6}{mds_download_2}{mds_expand}{label={above:\tiny{S2-PEBC}}};
 \node [label={below:\tiny{mds\_download\_2}}] at (1.5,-3.7) {};
 \node [label={below:\tiny{mds\_expand}}] at (1.5,-3.9) {};
 %
-\phynodedx{grid}{3,-3.6}{mds:download_2}{mds:update}{label={above:\tiny{S2-PPBC}}};
+\phynodedx{grid}{3,-3.6}{mds_download_2}{mds_update}{label={above:\tiny{S2-PPBC}}};
 \node [label={below:\tiny{mds\_download\_2}}] at (3,-3.7) {};
 \node [label={below:\tiny{mds\_update}}] at (33,-3.9) {};
 
-\phynodex{grid}{4.5,-3.6}{mds:charger}{label={above:\tiny{S2-OMBC}}};
+\phynodex{grid}{4.5,-3.6}{mds_charger}{label={above:\tiny{S2-OMBC}}};
 \node [label={below:\tiny{mds\_charger}}] at (4.5,-3.7) {};
 % \node [label={below:\tiny{power grid3}}] at (4.5,-3.9) {};
 
-\phynodex{grid}{6,-3.6}{mds:battery_full}{label={above:\tiny{S2-FLBC}}};
+\phynodex{grid}{6,-3.6}{mds_battery_full}{label={above:\tiny{S2-FLBC}}};
 \node [label={below:\tiny{mds\_battery\_full}}] at (6,-3.7) {};
 % \node [label={below:\tiny{power grid3}}] at (6,-3.9) {};
 
-\phynodedx{grid}{7.5,-3.6}{mds:call_merge}{mds:sync}{label={above:\tiny{S2-DDBC}}};
+\phynodedx{grid}{7.5,-3.6}{mds_call_merge}{mds_sync}{label={above:\tiny{S2-DDBC}}};
 \node [label={below:\tiny{mds\_call\_merge}}] at (7.5,-3.7) {};
 \node [label={below:\tiny{mds\_sync}}] at (7.5,-3.9) {};
 

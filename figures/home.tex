@@ -30,35 +30,35 @@
 
 \begin{tikzpicture} 
 % Control nodes
-\controlnodedx{fc}{0,-4.5}{mds:memory}{mds:globe}{label={above:\tiny{fleet ctrl}}};
-\controlnodedx{hc}{2,-4.5}{mds:memory}{mds:house}{label={-135:\tiny{HEMS}}};
+\controlnodedx{fc}{0,-4.5}{mds_memory}{mds_globe}{label={above:\tiny{fleet ctrl}}};
+\controlnodedx{hc}{2,-4.5}{mds_memory}{mds_house}{label={-135:\tiny{HEMS}}};
 
 % Example to have relative node positions
-% \controlnode{hc2}{}{mds:house}{label={-135:\tiny{HEM2S}}};
-% \controlnode{hc3}{right= 1cm of hc2}{mds:house}{label={-135:\tiny{HEM3S}}};
+% \controlnode{hc2}{}{mds_house}{label={-135:\tiny{HEM2S}}};
+% \controlnode{hc3}{right= 1cm of hc2}{mds_house}{label={-135:\tiny{HEM3S}}};
 
 \node (f1) at (0.75, -0.5) {};
 \node (f2) at (0.75, -1.5) {};
 \node (f3) at (0.75, -7.5) {};
 \node (f4) at (0.75, -8.5) {};
 
-\controlnodedx{c1}{3.5,0}{mds:memory}{mds:lightbulb}{label=above:\tiny{unc. ctrl}};
-\controlnodedx{c2}{3.5,-1.5}{mds:memory}{mds:local_laundry_service}{label=above:\tiny{ts. ctrl}};
-\controlnodedx{c3}{3.5,-3}{mds:memory}{mds:dishwasher_gen}{label=above:\tiny{ts. ctrl}};
-\controlnodedx{c4}{3.5,-4.5}{mds:memory}{mds:electric_car}{label=above:\tiny{bts. ctrl}};
-\controlnodedx{c5}{3.5,-6}{mds:memory}{mds:heat_pump}{label=above:\tiny{buf.conv. ctrl}};
-\controlnodedx{c6}{3.5,-7.5}{mds:memory}{mds:battery_3_bar}{label=above:\tiny{buf. ctrl}};
-\controlnodedx{c7}{3.5,-9}{mds:memory}{mds:solar_power}{label=above:\tiny{curt. ctrl}};
+\controlnodedx{c1}{3.5,0}{mds_memory}{mds_lightbulb}{label=above:\tiny{unc. ctrl}};
+\controlnodedx{c2}{3.5,-1.5}{mds_memory}{mds_local_laundry_service}{label=above:\tiny{ts. ctrl}};
+\controlnodedx{c3}{3.5,-3}{mds_memory}{mds_dishwasher_gen}{label=above:\tiny{ts. ctrl}};
+\controlnodedx{c4}{3.5,-4.5}{mds_memory}{mds_electric_car}{label=above:\tiny{bts. ctrl}};
+\controlnodedx{c5}{3.5,-6}{mds_memory}{mds_heat_pump}{label=above:\tiny{buf.conv. ctrl}};
+\controlnodedx{c6}{3.5,-7.5}{mds_memory}{mds_battery_3_bar}{label=above:\tiny{buf. ctrl}};
+\controlnodedx{c7}{3.5,-9}{mds_memory}{mds_solar_power}{label=above:\tiny{curt. ctrl}};
 
 
 % Device nodes
-\devicenodex{d1}{5.5,0}{mds:lightbulb}{label=above:\tiny{uncontrollable load}};
-\devicenodex{d2}{5.5,-1.5}{mds:local_laundry_service}{label=above:\tiny{washing machine}};
-\devicenodex{d3}{5.5,-3}{mds:dishwasher_gen}{label=above:\tiny{dishwasher}};
-\devicenodex{d4}{5.5,-4.5}{mds:electric_car}{label=above:\tiny{BEV/PHEV}};
-\devicenodex{d5}{5.5,-6}{mds:heat_pump}{label=above:\tiny{heat pump}};
-\devicenodex{d6}{5.5,-7.5}{mds:battery_3_bar}{label=above:\tiny{battery}};
-\devicenodex{d7}{5.5,-9}{mds:solar_power}{label=above:\tiny{PV}};
+\devicenodex{d1}{5.5,0}{mds_lightbulb}{label=above:\tiny{uncontrollable load}};
+\devicenodex{d2}{5.5,-1.5}{mds_local_laundry_service}{label=above:\tiny{washing machine}};
+\devicenodex{d3}{5.5,-3}{mds_dishwasher_gen}{label=above:\tiny{dishwasher}};
+\devicenodex{d4}{5.5,-4.5}{mds_electric_car}{label=above:\tiny{BEV/PHEV}};
+\devicenodex{d5}{5.5,-6}{mds_heat_pump}{label=above:\tiny{heat pump}};
+\devicenodex{d6}{5.5,-7.5}{mds_battery_3_bar}{label=above:\tiny{battery}};
+\devicenodex{d7}{5.5,-9}{mds_solar_power}{label=above:\tiny{PV}};
 
 % Small device nodes for links
 \dnodex{e2}{7, -1.5}{};
@@ -69,7 +69,7 @@
 
 
 % Physical infrastructure (Grid)
-\phynodex{poc}{8.25,-4.5}{mds:electric_meter}{label=above:\tiny{grid conn.}};
+\phynodex{poc}{8.25,-4.5}{mds_electric_meter}{label=above:\tiny{grid conn.}};
 
 % Adding small nodes (circles)
 \node (g1) at (9.25, -0.5) {};

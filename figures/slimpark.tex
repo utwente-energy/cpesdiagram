@@ -30,59 +30,59 @@
 
 \begin{tikzpicture} 
 % PHY:
-% mds:grid_on
-% mds:join
-% mds:electric_meter
-% mds:electric_meter
+% mds_grid_on
+% mds_join
+% mds_electric_meter
+% mds_electric_meter
 %
 %
 % DEV
-% mds:battery_android_4
-% mds:solar_power
-% mds:local_laundry_service
-% mds:ev_charger
-% mds:electric_car
+% mds_battery_android_4
+% mds_solar_power
+% mds_local_laundry_service
+% mds_ev_charger
+% mds_electric_car
 %
 %
 % CYBER
-% mds:memory
-% mds:network_intelligence
+% mds_memory
+% mds_network_intelligence
 %
-% mds:house
-% mds:communities
+% mds_house
+% mds_communities
 %
 %
 % INTERACT
-% mds:person
-% mds:groups
-% mds:euro
-% mds:gavel
-% mds:domain
-% mds:things_to_do
+% mds_person
+% mds_groups
+% mds_euro
+% mds_gavel
+% mds_domain
+% mds_things_to_do
 
 
 % Physical nodes
-\phynodex{meter}{0,1}{mds:electric_meter}{label={above:\tiny{grid connection}}};
+\phynodex{meter}{0,1}{mds_electric_meter}{label={above:\tiny{grid connection}}};
 
 
 % Device nodes
-\devicenodex{pv}{1,-1.5}{mds:solar_power}{label={below:\tiny{PV}}};
-\devicenodex{evse}{2.5,0}{mds:ev_charger}{label={above:\tiny{EVSE}}};
-\devicenodex{ev}{2.5,-1.5}{mds:electric_car}{label={45:\tiny{EV}}};
+\devicenodex{pv}{1,-1.5}{mds_solar_power}{label={below:\tiny{PV}}};
+\devicenodex{evse}{2.5,0}{mds_ev_charger}{label={above:\tiny{EVSE}}};
+\devicenodex{ev}{2.5,-1.5}{mds_electric_car}{label={45:\tiny{EV}}};
 
 
 \dnodex{d0}{1,0}{};
 
 
 % Control nodes
-\controlnodedx{cc}{4,0}{mds:memory}{mds:ev_charger}{label={}};
-\controlnodedx{evc}{4,-1.5}{mds:memory}{mds:electric_car}{label={}};
+\controlnodedx{cc}{4,0}{mds_memory}{mds_ev_charger}{label={}};
+\controlnodedx{evc}{4,-1.5}{mds_memory}{mds_electric_car}{label={}};
 
 
 % Interaction nodes
-\interactnodex{cpo}{5.5,0}{mds:domain}{label={above:\tiny{CPO}}};
-\interactnodex{user}{6.5,-2.25}{mds:person}{label={45:\tiny{user}}};
-\interactnodex{market}{5.5,-1.5}{mds:finance}{label={above:\tiny{energy market}}};
+\interactnodex{cpo}{5.5,0}{mds_domain}{label={above:\tiny{CPO}}};
+\interactnodex{user}{6.5,-2.25}{mds_person}{label={45:\tiny{user}}};
+\interactnodex{market}{5.5,-1.5}{mds_finance}{label={above:\tiny{energy market}}};
 
 
 

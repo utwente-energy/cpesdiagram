@@ -30,42 +30,42 @@
 
 \begin{tikzpicture} 
 % PHY:
-% mds:grid_on
-% mds:join
-% mds:electric_meter
-% mds:electric_meter
+% mds_grid_on
+% mds_join
+% mds_electric_meter
+% mds_electric_meter
 %
 %
 % DEV
-% mds:battery_android_4
-% mds:solar_power
-% mds:local_laundry_service
-% mds:ev_charger
-% mds:electric_car
+% mds_battery_android_4
+% mds_solar_power
+% mds_local_laundry_service
+% mds_ev_charger
+% mds_electric_car
 %
 %
 % CYBER
-% mds:memory
-% mds:network_intelligence
+% mds_memory
+% mds_network_intelligence
 %
-% mds:house
-% mds:communities
+% mds_house
+% mds_communities
 %
 %
 % INTERACT
-% mds:person
-% mds:groups
-% mds:euro
-% mds:gavel
-% mds:domain
-% mds:things_to_do
+% mds_person
+% mds_groups
+% mds_euro
+% mds_gavel
+% mds_domain
+% mds_things_to_do
 
 
 % Physical nodes
-\phynodex{grid}{0,0}{mds:grid_on}{label={above:\tiny{power grid}}};
-\phynodex{transformer}{0,-1.5}{mds:join}{label={}};
-\phynodex{meter0}{1,-3}{mds:electric_meter}{label={above:\tiny{connection house 1}}};
-\phynodex{meter1}{1,-4.5}{mds:electric_meter}{label={above:\tiny{connection house 2}}};
+\phynodex{grid}{0,0}{mds_grid_on}{label={above:\tiny{power grid}}};
+\phynodex{transformer}{0,-1.5}{mds_join}{label={}};
+\phynodex{meter0}{1,-3}{mds_electric_meter}{label={above:\tiny{connection house 1}}};
+\phynodex{meter1}{1,-4.5}{mds_electric_meter}{label={above:\tiny{connection house 2}}};
 
 \pnodex{grid_junction}{0,-3}{};
 \pnodex{grid_junction2}{0,-4.5}{};
@@ -73,12 +73,12 @@
 
 % Device nodes
 \CPESdashed
-\devicenodex{bat}{3.5,-1.5}{mds:battery_android_4}{label={above:\tiny{battery}}};
+\devicenodex{bat}{3.5,-1.5}{mds_battery_android_4}{label={above:\tiny{battery}}};
 \CPESsolid
-\devicenodex{pv}{3.5,-3}{mds:solar_power}{label={above:\tiny{PV}}};
-\devicenodex{wm}{3.5,-4.5}{mds:local_laundry_service}{label={above:\tiny{manual washing machine}}};
-\devicenodex{ev}{3.5,-6}{mds:electric_car}{label={}};
-\devicenodex{evse}{2,-6}{mds:ev_charger}{label={180:\tiny{EV+charger}}};
+\devicenodex{pv}{3.5,-3}{mds_solar_power}{label={above:\tiny{PV}}};
+\devicenodex{wm}{3.5,-4.5}{mds_local_laundry_service}{label={above:\tiny{manual washing machine}}};
+\devicenodex{ev}{3.5,-6}{mds_electric_car}{label={}};
+\devicenodex{evse}{2,-6}{mds_ev_charger}{label={180:\tiny{EV+charger}}};
 
 
 \dnodex{d0}{2,-3}{};
@@ -88,31 +88,31 @@
 
 
 % Control nodes
-\controlnodedx{dsoc}{5,0}{mds:memory}{mds:grid_on}{label={above:\tiny{grid control}}};
+\controlnodedx{dsoc}{5,0}{mds_memory}{mds_grid_on}{label={above:\tiny{grid control}}};
 \CPESdashed
-\controlnodedx{batc}{5,-1.5}{mds:memory}{mds:battery_android_4}{label={above:\tiny{battery controller}}};
+\controlnodedx{batc}{5,-1.5}{mds_memory}{mds_battery_android_4}{label={above:\tiny{battery controller}}};
 \CPESsolid
-\controlnodedx{pvc}{5,-3}{mds:memory}{mds:solar_power}{label={-45:\tiny{PV controller}}};
-\controlnodedx{evc}{5,-6}{mds:robot_2}{mds:electric_car}{label={above:\tiny{EV agent}}};
+\controlnodedx{pvc}{5,-3}{mds_memory}{mds_solar_power}{label={-45:\tiny{PV controller}}};
+\controlnodedx{evc}{5,-6}{mds_robot_2}{mds_electric_car}{label={above:\tiny{EV agent}}};
 
-\controlnodedx{hems0}{7,-2.25}{mds:network_intelligence}{mds:house}{label={0:\tiny{HEMS 1}}};
-\controlnodedx{hems1}{7,-5.25}{mds:network_intelligence}{mds:house}{label={45:\tiny{HEMS 2}}};
+\controlnodedx{hems0}{7,-2.25}{mds_network_intelligence}{mds_house}{label={0:\tiny{HEMS 1}}};
+\controlnodedx{hems1}{7,-5.25}{mds_network_intelligence}{mds_house}{label={45:\tiny{HEMS 2}}};
 
-\controlnodedx{comm}{8.2,-3.95}{mds:network_intelligence}{mds:house}{label={}};
-\controlnodedx{comm}{8.1,-3.85}{mds:network_intelligence}{mds:house}{label={}};
-\controlnodedx{comm}{8,-3.75}{mds:network_intelligence}{mds:house}{label={45:\tiny{HEMSs}}};
+\controlnodedx{comm}{8.2,-3.95}{mds_network_intelligence}{mds_house}{label={}};
+\controlnodedx{comm}{8.1,-3.85}{mds_network_intelligence}{mds_house}{label={}};
+\controlnodedx{comm}{8,-3.75}{mds_network_intelligence}{mds_house}{label={45:\tiny{HEMSs}}};
 
 \cnodex{c0}{6,-2.25}{};
 \cnodex{c1}{7,-3.75}{};
 
 % Interaction nodes
-\interactnodex{dso}{10,0}{mds:domain}{label={above:\tiny{distribution service operator}}};
-\interactnodex{p0}{10,-1.5}{mds:person}{label={-45:\tiny{user 2}}};
-\interactnodex{p1}{10,-4.5}{mds:person}{label={-45:\tiny{user 2}}};
-\interactnodex{market}{10,-7}{mds:finance}{label={above:\tiny{energy market}}};
+\interactnodex{dso}{10,0}{mds_domain}{label={above:\tiny{distribution service operator}}};
+\interactnodex{p0}{10,-1.5}{mds_person}{label={-45:\tiny{user 2}}};
+\interactnodex{p1}{10,-4.5}{mds_person}{label={-45:\tiny{user 2}}};
+\interactnodex{market}{10,-7}{mds_finance}{label={above:\tiny{energy market}}};
 
-\interactnodex{govt}{11.5,-0.75}{mds:account_balance}{label={-45:\tiny{government}}};
-\interactnodex{coop}{11.5,-3}{mds:groups}{label={-45:\tiny{energy cooporative}}};
+\interactnodex{govt}{11.5,-0.75}{mds_account_balance}{label={-45:\tiny{government}}};
+\interactnodex{coop}{11.5,-3}{mds_groups}{label={-45:\tiny{energy cooporative}}};
 
 \inodex{i0}{10,-3}{};
 
@@ -183,9 +183,9 @@
 
 % The light house nodes in the bottom left
 \cpesstylelight
-\phynodex{meter2}{1.2,-7.2}{mds:electric_meter}{label={}};
-\phynodex{meter2}{1.1,-7.1}{mds:electric_meter}{label={}};
-\phynodex{meter2}{1,-7}{mds:electric_meter}{label={-135:\tiny{other houses}}};
+\phynodex{meter2}{1.2,-7.2}{mds_electric_meter}{label={}};
+\phynodex{meter2}{1.1,-7.1}{mds_electric_meter}{label={}};
+\phynodex{meter2}{1,-7}{mds_electric_meter}{label={-135:\tiny{other houses}}};
 \draw [plink] (grid_junction2.south) |- (meter2.west);
 
 \cpesstyle
@@ -194,15 +194,15 @@
 \draw [style=rectangle, fill=black!5, dashed] (13.75, 1) rectangle (17.25,-8);
 \node (legend) at (15.5, 0.5) {\small{Legend}};
 
-\phynodex{l1}{14.5,-0.5}{mds:circle}{label={above:\tiny{physical}}};
+\phynodex{l1}{14.5,-0.5}{mds_circle}{label={above:\tiny{physical}}};
 \pnodex{ln1}{16.5,-0.5}{label={above:\tiny{joint hub}}};
 \draw [plink] (l1.east) -- (ln1.west) node [above,align=center,midway, label=below:\tiny{cable}] {};
 
-\devicenodex{l2}{14.5,-2}{mds:square}{label={above:\tiny{device}}};
+\devicenodex{l2}{14.5,-2}{mds_square}{label={above:\tiny{device}}};
 \dnodex{ln2}{16.5,-2}{label={above:\tiny{pool hub}}};
 \draw [<->, dlink] (l2.east) -- (ln2.west) node [above,align=center,midway, label=below:\tiny{stream}] {};
 
-\controlnodex{l3}{14.5,-3.5}{mds:hexagon}{label={above:\tiny{cyber}}};
+\controlnodex{l3}{14.5,-3.5}{mds_hexagon}{label={above:\tiny{cyber}}};
 \cnodex{ln31}{16.5,-3.5}{label={above:\tiny{network hub}}};
 \cnodex{ln32}{16.5,-4.25}{};
 \cnodex{ln33}{16.5,-4.75}{};
@@ -214,7 +214,7 @@
 \draw [<-, clinku] (ln35.east) -- (ln33.west) node [above,align=center,midway, label=below:\tiny{1-way command}] {};
 
 %
-\interactnodex{l4}{14.5,-6.25}{mds:thermostat_carbon}{label={above:\tiny{interaction}}};
+\interactnodex{l4}{14.5,-6.25}{mds_thermostat_carbon}{label={above:\tiny{interaction}}};
 \inodex{ln41}{16.5,-6.25}{label={above:\tiny{forum hub}}};
 \inodex{ln42}{16.5,-7}{};
 \inodex{ln43}{14.5,-7}{};
