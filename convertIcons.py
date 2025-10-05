@@ -106,44 +106,44 @@ os.makedirs(outdir+"/svg/fill", exist_ok = True)
 # == Process the Material Design Symbols ==
 
 # Process all the icons one by one
-# subfolders= os.listdir(indirmds)
-# for iconname in subfolders:
-    # if not '_stroke.svg' in iconname:
-        # print("processing mds_"+iconname)
+subfolders= os.listdir(indirmds)
+for iconname in subfolders:
+    if not '_stroke.svg' in iconname:
+        print("processing mds_"+iconname)
 
-        # # First process the plain icon
+        # First process the plain icon
 
-        # # Extract the icon name and location
-        # icon = iconname + "_" + icon_weight + icon_grade + "_" + icon_size + "px.svg"
-        # icon = icon.replace("__", "_")  # remove double underscore
-        # filename = indirmds+iconname+"/"+icons_style+"/"+icon
+        # Extract the icon name and location
+        icon = iconname + "_" + icon_weight + icon_grade + "_" + icon_size + "px.svg"
+        icon = icon.replace("__", "_")  # remove double underscore
+        filename = indirmds+iconname+"/"+icons_style+"/"+icon
 
-        # if stroke != "":
-            # filename = add_stroke(filename, stroke)
+        if stroke != "":
+            filename = add_stroke(filename, stroke)
 
-        # # Store the SVG version for easy use with e.g. Draw.io
-        # shutil.copy(filename, outdir+"/svg/plain/mds_"+iconname+".svg")
+        # Store the SVG version for easy use with e.g. Draw.io
+        shutil.copy(filename, outdir+"/svg/plain/mds_"+iconname+".svg")
 
-        # # Convert to pdf
-        # cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mds_"+iconname+".pdf")
+        # Convert to pdf
+        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/plain/mds_"+iconname+".pdf")
 
 
 
-        # # Next do the same with the filled version
+        # Next do the same with the filled version
 
-        # # Extract the icon name and location
-        # icon = iconname + "_" + icon_weight_fill + icon_grade_fill + "fill1_" + icon_size_fill + "px.svg"
-        # icon = icon.replace("__", "_")  # remove double underscore
-        # filename = indirmds+iconname+"/"+icons_style_fill+"/"+icon
+        # Extract the icon name and location
+        icon = iconname + "_" + icon_weight_fill + icon_grade_fill + "fill1_" + icon_size_fill + "px.svg"
+        icon = icon.replace("__", "_")  # remove double underscore
+        filename = indirmds+iconname+"/"+icons_style_fill+"/"+icon
 
-        # if stroke_fill != "":
-            # filename = add_stroke(filename, stroke_fill)
+        if stroke_fill != "":
+            filename = add_stroke(filename, stroke_fill)
 
-        # # Store the SVG version for easy use with e.g. Draw.io
-        # shutil.copy(filename, outdir+"/svg/fill/mds_"+iconname+".svg")
+        # Store the SVG version for easy use with e.g. Draw.io
+        shutil.copy(filename, outdir+"/svg/fill/mds_"+iconname+".svg")
 
-        # # Convert to pdf
-        # cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mds_"+iconname+".pdf")
+        # Convert to pdf
+        cairosvg.svg2pdf(url=filename, write_to=outdir+"/pdf/fill/mds_"+iconname+".pdf")
 
 
 
