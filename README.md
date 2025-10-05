@@ -22,10 +22,17 @@ In latex, the following packages are required (please refer to the examples):
 - transparency
 
 
-Please 
+#### Installation with docker
+Docker is the most convenient way of installation, especially under Windows. This readme assumes you have Git and Docker intalled and running on your machine. We explain how to cloen the project and generate the icon sets from their sources. Start a terminal in your user folder, e.g., under Windows press start and search for "cmd" to open a terminal. Execute the following steps, the last step takes a long time due to the large icon set.
 
-#### Installation
-Please follow the following steps using the commandline from the root directory of this repository:
+    git clone https://github.com/utwente-energy/cpesdiagram.git
+	cd cpesdiag
+	docker build -t cpesdiag .
+	docker run docker run -v "C:\Users\<yourname>\cpesdiagram\cpesdiag\icons:/app/cpesdiag/icons" cpesdiag
+
+
+#### Installation without docker
+Please follow the following steps using the commandline from the root directory of this repository (we assume you have already cloned the project):
 
     git clone https://github.com/google/material-design-icons.git
     git clone https://github.com/Templarian/MaterialDesign
